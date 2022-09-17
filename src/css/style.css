@@ -3,6 +3,10 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a,
 a:link,
 a:visited {
@@ -51,6 +55,24 @@ a:visited {
   color: #e5e5e5;
   font-size: 20px;
   font-weight: 600;
+}
+
+.header__support--button {
+  display: flex;
+  width: 120rem;
+  height: 2.5rem;
+  position: fixed;
+  top: 3.75rem;
+}
+
+.header__support--button button {
+  border-style: none;
+  width: 120rem;
+  height: 2.5rem;
+  background-color: #6768ab;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: normal;
 }
 
 /* main */
