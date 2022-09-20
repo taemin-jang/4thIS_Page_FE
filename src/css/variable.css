@@ -1,0 +1,8 @@
+:root {
+  --black: #000000;
+  --light-black: #1b1a1e;
+  --white: #ffffff;
+  __text--hover-light-gray: #e5e5e5;
+  __text--normal-gray: #9c9c9c;
+  __text--active-purple: #9a9cfc;
+}
