@@ -1,0 +1,61 @@
+/* header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  padding: 17px 320px 16px 320px;
+  background-color: #000000;
+}
+
+.header__menu-list-logo h1 {
+  color: #e5e5e5;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header__menu--list {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.header__menu--list a {
+  color: #9c9c9c;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.header__menu--list a.active {
+  color: #9a9cfc;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.header__menu--list a:hover {
+  color: #e5e5e5;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.header__support--button {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 60px;
+}
+
+.header__support--button button {
+  border-style: none;
+  width: 100%;
+  height: 40px;
+  background-color: #6768ab;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: normal;
+  cursor: pointer;
+}

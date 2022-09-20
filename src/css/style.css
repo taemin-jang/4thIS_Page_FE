@@ -1,105 +1,14 @@
-* {
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+/* @import url("http://fonts.cdnfonts.com/css/segoe-ui-4"); */
+@import "./reset.css";
+@import "./variable.css";
 
-body {
-  overflow-x: hidden;
-}
-
-a,
-a:link,
-a:visited {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* header */
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  width: 120rem;
-  height: 3.75rem;
-  padding: 17px 320px 16px 320px;
-  background-color: #000000;
-}
-
-.header__menu-list-logo h1 {
-  color: #e5e5e5;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.header__menu--list {
-  display: flex;
-  justify-content: space-between;
-  width: 31.25rem;
-}
-
-.header__menu--list a {
-  color: #9c9c9c;
-  font-size: 20px;
-  font-weight: normal;
-}
-
-.header__menu--list a.active {
-  color: #9a9cfc;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.header__menu--list a:hover {
-  color: #e5e5e5;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.header__support--button {
-  display: flex;
-  width: 120rem;
-  height: 2.5rem;
-  position: fixed;
-  top: 3.75rem;
-}
-
-.header__support--button button {
-  border-style: none;
-  width: 120rem;
-  height: 2.5rem;
-  background-color: #6768ab;
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: normal;
-}
+/* Components */
+@import "./Components/header.css";
+@import "./Components/footer.css";
+/* Screens */
 
 /* main */
 .main {
-  width: 120rem;
-  height: 57.5rem;
-}
-
-/* footer */
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  width: 120rem;
-  height: 3.75rem;
-  padding: 17px 1027px 16px 320px;
-  background-color: #000000;
-}
-
-.footer h1 {
-  color: #e5e5e5;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.footer p {
-  color: #e5e5e5;
-  font-size: 20px;
-  font-weight: normal;
+  width: 100%;
+  height: 920px;
 }
