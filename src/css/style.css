@@ -16,6 +16,7 @@
 }
 
 /* count */
+
 /* .count {
   display: flex;
   flex-direction: column;
@@ -31,13 +32,15 @@
   margin: 0px 544px 56px;
 }
 
-.count__title h1 {
+.count__title h1,
+.about__title h1 {
   font-size: 90px;
   text-align: center;
   margin-bottom: 16px;
 }
 
-.count__title p {
+.count__title p,
+.about__title p {
   font-size: 30px;
 }
 
@@ -71,15 +74,111 @@
   margin-bottom: 20px;
 }
 
-.count__button {
+.count__support--button {
   text-align: center;
   margin-top: 61.8px;
 }
 
-.count__button button {
+.count__support--button button {
   background-color: var(--light-black);
   color: var(--text--hover-light-gray);
   font-size: 30px;
   border-style: none;
   border-bottom: 3px solid var(--text--hover-light-gray);
+  cursor: pointer;
+  margin-bottom: 188.5px;
+}
+
+.chatbot {
+  position: fixed;
+  right: 108px;
+  bottom: 80px;
+}
+
+.chatbot--button button {
+  display: flex;
+  width: 108px;
+  height: 108px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border-style: none;
+  background: linear-gradient(to right, #bbbcfc, #6f70b2);
+  cursor: pointer;
+}
+
+.chatbot--image {
+  margin-top: 10px;
+}
+
+/* about */
+
+.about__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text--hover-light-gray);
+  margin: 0px 544px 145px;
+}
+
+.about__gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 33px;
+}
+
+.about__gallery--image {
+  width: 32%;
+  height: 430px;
+  background-color: var(--white);
+}
+
+.about__bullet {
+  display: flex;
+  width: 68px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 926px 65px;
+}
+
+.about__bullet-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #3d3d3d;
+}
+
+.about__bullet-dot:nth-child(2) {
+  background-color: var(--text--hover-light-gray);
+}
+
+.about__sub-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text--hover-light-gray);
+  margin: 0px 544px 87px;
+}
+
+.about__sub-title h1 {
+  font-size: 61px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2px;
+  border-bottom: 3px solid var(--text--hover-light-gray);
+}
+
+.about__sub-title p {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.about__sub-text p {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 41px;
+  color: var(--text--hover-light-gray);
+  margin-bottom: 133px;
 }
