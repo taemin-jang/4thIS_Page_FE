@@ -13,3 +13,76 @@
   background-color: var(--light-black);
   margin-top: 100px;
 }
+
+/* award */
+.award__title {
+  text-align: center;
+  padding-top: 123px;
+  display: flex;
+  justify-content: center;
+}
+.award__title h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--text--hover-light-gray);
+  border-bottom: 3px solid var(--text--hover-light-gray);
+}
+
+.award__subtitle {
+  padding-top: 5px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: center;
+}
+.award__subtitle p {
+  letter-spacing: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text--hover-light-gray);
+}
+
+.award__scroll {
+  width: 1265px;
+  height: 454px;
+  overflow-y: auto;
+  margin: 80px 320px 0px;
+  background-color: white;
+  padding: 60px 0px 70px;
+}
+
+/* 스크롤 안타내는거
+.award__scroll::-webkit-scrollbar {
+  display: none;
+} */
+
+.award__scroll__content {
+  color: var(--black);
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+}
+.award__scroll__content p {
+  margin: 0px 0px 18px 153px;
+}
+
+/* member */
+.member__title {
+  text-align: center;
+  padding-top: 146px;
+  display: flex;
+  justify-content: center;
+}
+.member__title h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--text--hover-light-gray);
+  border-bottom: 3px solid var(--text--hover-light-gray);
+}
+
+.member__subtitle {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text--hover-light-gray);
+}
