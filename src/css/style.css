@@ -12,7 +12,7 @@
   width: 100%;
   background-color: var(--light-black);
   margin-top: 100px;
-  padding-top: 184px;
+  padding: 184px 0px 214px;
 }
 
 /* count */
@@ -391,8 +391,13 @@
 }
 
 .member__subtitle {
-  text-align: center;
   padding-top: 5px;
+  padding-left: 16px;
+  display: flex;
+  justify-content: center;
+}
+.member__subtitle p {
+  letter-spacing: 14px;
   font-size: 20px;
   font-weight: 600;
   color: var(--text--hover-light-gray);
