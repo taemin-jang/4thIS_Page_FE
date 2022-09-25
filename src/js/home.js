@@ -60,3 +60,31 @@ let interval = setInterval(() => {
     clearInterval(interval);
   }
 }, 1000);
+
+/**
+ * 5초마다 이미지가 한장씩 자동으로 이동하는 함수.
+ * @param {number} cnt
+ */
+function slide(cnt) {
+  // 이동시킬 html 요소 선택
+  let slideEl = document.querySelector(".about__gallery");
+
+  // -633px씩 이동
+  slideEl.style.transform = `translate(${-633 * cnt}px)`;
+  cnt++;
+
+  // 이미지가 마지막 3장 보이면 다시 처음으로 돌아가기
+  if (cnt === 7) {
+    cnt = 0;
+  }
+
+  // 5초간 반복
+  setTimeout(() => {
+    slide(cnt);
+  }, 5000);
+}
+
+//setTimeout을 사용한 이유는 중첩으로 사용할 경우 지연시간을 보장해주기 때문이다.
+setTimeout(() => {
+  slide(1);
+}, 5000);
