@@ -68,13 +68,46 @@ let interval = setInterval(() => {
 function slide(cnt) {
   // 이동시킬 html 요소 선택
   let slideEl = document.querySelector(".about__gallery");
+  let bulletEl = document.querySelectorAll(".about__bullet-dot");
 
   // -633px씩 이동
   slideEl.style.transform = `translate(${-633 * cnt}px)`;
+
+  // pagination 이동
+  function pagination(cnt) {
+    bulletEl[0].classList.remove("active");
+    bulletEl[1].classList.remove("active");
+    bulletEl[2].classList.remove("active");
+    if (cnt < 3) {
+      bulletEl[0].classList.add("active");
+    } else if (cnt < 6) {
+      bulletEl[1].classList.add("active");
+    } else {
+      bulletEl[2].classList.add("active");
+    }
+  }
+  pagination(cnt);
+
+  // pagination 클릭 시 해당 위치로 이동
+  bulletEl[0].addEventListener("click", () => {
+    slideEl.style.transform = "translate(0px)";
+    cnt = 1;
+    pagination(cnt);
+  });
+  bulletEl[1].addEventListener("click", () => {
+    slideEl.style.transform = "translate(-1899px)";
+    cnt = 4;
+    pagination(cnt);
+  });
+  bulletEl[2].addEventListener("click", () => {
+    slideEl.style.transform = "translate(-3798px)";
+    cnt = 6;
+    pagination(cnt);
+  });
   cnt++;
 
   // 이미지가 마지막 3장 보이면 다시 처음으로 돌아가기
-  if (cnt === 7) {
+  if (cnt > 6) {
     cnt = 0;
   }
 
