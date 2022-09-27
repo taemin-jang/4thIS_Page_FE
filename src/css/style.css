@@ -478,10 +478,17 @@
 
 /* Question*/
 
+section.QnA {
+  padding-bottom: 146px;
+}
+section.contact {
+  padding-bottom: 141px;
+}
+
 .qna__title,
 .contact__title {
   text-align: center;
-  padding-top: 104px;
+  /* padding-top: 104px; */
   display: flex;
   padding-left: 319px;
   padding-right: 319px;
@@ -514,11 +521,12 @@ ul.list {
   margin-left: 319px;
   margin-right: 319px;
   padding-top: 48px;
+  cursor: pointer;
 }
 
-.title,
+.question,
 .kakao {
-  width: 100%;
+  width: 1282px;
   height: 112px;
   line-height: 60px;
   font-size: 20px;
@@ -533,19 +541,27 @@ ul.list {
   z-index: 1;
 }
 
-span.title__qna-icon {
+span.question__qna-icon, span.kakao__icon{
   margin-left: 49px;
   font-size: 39px;
   padding-top: 23px;
   padding-bottom: 23px;
 }
 
-span.title__text {
+span.kakao__icon {
+  background: url('../assets/images/favi/favicon-32x32.png') 0 0 no-repeat;
+  padding: 0;
+}
+
+
+span.question__text , span.kakao__text {
   font-size: 20px;
   padding: 23px;
 }
 
 .con {
+  width: 1282px;
+  height: 303px;
   padding: 49px;
   display: none;
   background-color: var(--white);
@@ -556,13 +572,14 @@ span.title__text {
 }
 
 p.con__text {
-  background-color: var(--black);
+  background-color: var(--light-black);
   color: var(--white);
   padding-left: 129px;
   padding-right: 129px;
   padding-top: 39px;
   padding-bottom: 39px;
   line-height: 1.5;
+  font-size: 20px;
 }
 
 .empty {
