@@ -376,6 +376,24 @@
   margin: 80px 320px 0px;
   background-color: white;
   padding: 60px 0px 70px;
+  border-radius: 10px;
+}
+
+.award__scroll::-webkit-scrollbar {
+  width: 16px;
+}
+
+.award__scroll::-webkit-scrollbar-thumb {
+  background-color: #6768ab;
+  border-radius: 37px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+.award__scroll::-webkit-scrollbar-track {
+  background-color: #cccccc;
+  border-radius: 37px;
+  box-shadow: inset 0px 0px 3px white;
 }
 
 /* 스크롤 안타내는거
