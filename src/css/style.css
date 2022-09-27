@@ -207,29 +207,34 @@
   letter-spacing: 7px;
 }
 
+/* @keyframes hover {
+  from {
+    background-color: var(--white);
+    color: var(--black);
+  }
+  to {
+    background-color: var(--black);
+    color: var(--white);
+  }
+} */
+
 .about__what-active {
-  display: none;
-}
-
-.about__what-active.active {
-  display: block;
-}
-
-.about__what-active--white {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0px 318px 25px;
 }
 
-.about__what-active--white:nth-child(2) {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0px 529px 227px;
+.about__what-active--div:nth-child(4) {
+  margin: 25px 60px 227px 202px;
 }
 
-.about__what-active--white-div {
+.about__what-active--div:nth-child(5) {
+  margin: 25px 201px 227px 0px;
+}
+
+.about__what-active--white-div.active {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -238,6 +243,15 @@
   height: 226px;
   background-color: var(--white);
   border-radius: 10px;
+  transition: 0.5s;
+}
+
+/* .about__what-active--div.active:hover {
+  animation: hover 5s;
+} */
+
+.about__what-active--white-div {
+  display: none;
 }
 
 .about__what-active--white-div h1 {
@@ -257,17 +271,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0px 318px 25px;
 }
 
-.about__what-active--black:nth-child(2) {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0px 529px 227px;
-}
-
-.about__what-active--black-div {
+.about__what-active--black-div.active {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -279,11 +287,20 @@
   border-radius: 10px;
   padding: 0px 39px;
   line-height: 27px;
+  transition: 0.5s;
+}
+
+/* .about__what-active--div.active:hover {
+  animation: hover 5s;
+} */
+
+.about__what-active--black-div {
+  display: none;
 }
 
 .about__what-active--black-div p {
   font-size: 20px;
-  color: var(--text--hover-light-gray);
+  color: var(--white);
 }
 
 .about__promotion {

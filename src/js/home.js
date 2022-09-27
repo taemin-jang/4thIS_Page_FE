@@ -62,7 +62,7 @@ let interval = setInterval(() => {
 }, 1000);
 
 /**
- * 5초마다 이미지가 한장씩 자동으로 이동하는 함수.
+ * 5초마다 이미지가 한장씩 자동으로 이동하는 함수
  * @param {number} cnt
  */
 function slide(cnt) {
@@ -73,16 +73,25 @@ function slide(cnt) {
   // -633px씩 이동
   slideEl.style.transform = `translate(${-633 * cnt}px)`;
 
-  // pagination 이동
+  /**
+   * pagination 이동해주는 함수 (해당 요소 클래스에 active를 추가)
+   * @param {number} cnt
+   */
   function pagination(cnt) {
+    // 모든 요소 active 클래스 초기화
     bulletEl[0].classList.remove("active");
     bulletEl[1].classList.remove("active");
     bulletEl[2].classList.remove("active");
+
+    // 조건에 맞는 각 요소에 active 클래스 추가
     if (cnt < 3) {
+      // 1 ~ 3
       bulletEl[0].classList.add("active");
     } else if (cnt < 6) {
+      // 4 ~ 6
       bulletEl[1].classList.add("active");
     } else {
+      // 7 ~ 9
       bulletEl[2].classList.add("active");
     }
   }
@@ -121,3 +130,37 @@ function slide(cnt) {
 setTimeout(() => {
   slide(1);
 }, 5000);
+
+/**
+ * what-active white에 마우스 hover되면 black
+ * black에 마우스 out되면 white로 바꿔주는 함수
+ * @param {number} i about__what-active--div가 5개라서 i로 (1~5)번호를 지정해줌
+ */
+function whatOver(i) {
+  // about__what-active--div 요소 선택
+  let whatEl = document.querySelector(
+    `.about__what-active--div:nth-child(${+i})`
+  );
+
+  // white 요소 선택
+  let whatEl_white = document.querySelector(
+    `.about__what-active--div:nth-child(${+i}) .about__what-active--white-div`
+  );
+
+  // black 요소 선택
+  let whatEl_black = document.querySelector(
+    `.about__what-active--div:nth-child(${+i}) .about__what-active--black-div`
+  );
+
+  // whatEl 요소에 mouseover가 되면 white 요소에 active 제거 및 black 요소에 active 추가
+  whatEl.addEventListener("mouseover", () => {
+    whatEl_white.classList.remove("active");
+    whatEl_black.classList.add("active");
+  });
+
+  // whatEl 요소에 mouseout가 되면 black 요소에 active 제거 및 white 요소에 active 추가
+  whatEl.addEventListener("mouseout", () => {
+    whatEl_black.classList.remove("active");
+    whatEl_white.classList.add("active");
+  });
+}
