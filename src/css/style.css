@@ -481,9 +481,6 @@
 section.QnA {
   padding-bottom: 146px;
 }
-section.contact {
-  padding-bottom: 141px;
-}
 
 .qna__title,
 .contact__title {
@@ -520,7 +517,7 @@ ul.list {
   max-width: 60%;
   margin-left: 319px;
   margin-right: 319px;
-  padding-top: 48px;
+  padding-top: 42px;
   cursor: pointer;
 }
 
@@ -543,14 +540,13 @@ ul.list {
 
 span.question__qna-icon, span.kakao__icon{
   margin-left: 49px;
-  font-size: 39px;
-  padding-top: 23px;
-  padding-bottom: 23px;
+  font-size: 30px;
 }
 
 span.kakao__icon {
-  background: url('../assets/images/favi/favicon-32x32.png') 0 0 no-repeat;
-  padding: 0;
+  background: url('../assets/images/question/kakao-icon.png') 0 0 no-repeat;
+  background-size: 30px;
+  background-position-y:bottom;
 }
 
 
