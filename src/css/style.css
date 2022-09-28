@@ -581,3 +581,47 @@ p.con__text {
 .empty {
   padding-top: 180px;
 }
+
+/* joinUsDetail */
+
+section.web-banners, section.field, section.activity {
+  padding-bottom: 146px;
+}
+
+.activity__title,
+.type-of-talent__title,
+.field__title {
+  text-align: center;
+  /* padding-top: 104px; */
+  display: flex;
+  padding-left: 319px;
+  padding-right: 319px;
+}
+
+.activity__title h1,
+.type-of-talent__title h1,
+.field__title h1 {
+  font-size: 50px;
+  color: var(--text--hover-light-gray);
+}
+
+.activity__title h1,
+.type-of-talent__title h1 {
+  border-bottom: 3px solid var(--text--hover-light-gray);
+  line-height: 1.5;
+}
+
+ul.activity__list,
+ul.type-of-talent__list {
+  font-size: 25px;
+  padding-top: 73px;
+  padding-left: 319px;
+  padding-right: 319px;
+  color: var(--text--hover-light-gray);
+  list-style-type:circle
+}
+
+ul.activity__list li,
+ul.type-of-talent__list li{
+  padding-bottom: 33px;
+}
