@@ -145,3 +145,13 @@ a:visited {
   color: inherit;
   text-decoration: none;
 }
+
+header {
+  position: relative;
+  z-index: 2;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
