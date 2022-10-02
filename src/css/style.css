@@ -89,6 +89,8 @@
   margin-bottom: 188.5px;
 }
 
+/* chatbot */
+
 .chatbot {
   position: fixed;
   right: 108px;
@@ -105,6 +107,37 @@
   border-style: none;
   background: linear-gradient(to right, #bbbcfc, #6f70b2);
   cursor: pointer;
+  z-index: 1;
+}
+
+.chatbot__click {
+  display: none;
+}
+
+.chatbot__click.active {
+  display: block;
+}
+
+.chatbot__click-list {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.chatbot__click-list--div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 60px;
+  padding: 33px 0px;
+  width: 251px;
+  height: 92px;
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 86px;
 }
 
 .chatbot--image {
@@ -538,19 +571,20 @@ ul.list {
   z-index: 1;
 }
 
-span.question__qna-icon, span.kakao__icon{
+span.question__qna-icon,
+span.kakao__icon {
   margin-left: 49px;
   font-size: 30px;
 }
 
 span.kakao__icon {
-  background: url('../assets/images/question/kakao-icon.png') 0 0 no-repeat;
+  background: url("../assets/images/question/kakao-icon.png") 0 0 no-repeat;
   background-size: 30px;
-  background-position-y:bottom;
+  background-position-y: bottom;
 }
 
-
-span.question__text , span.kakao__text {
+span.question__text,
+span.kakao__text {
   font-size: 20px;
   padding: 23px;
 }
@@ -584,7 +618,9 @@ p.con__text {
 
 /* joinUsDetail */
 
-section.web-banners, section.field, section.activity {
+section.web-banners,
+section.field,
+section.activity {
   padding-bottom: 146px;
 }
 
@@ -618,10 +654,10 @@ ul.type-of-talent__list {
   padding-left: 319px;
   padding-right: 319px;
   color: var(--text--hover-light-gray);
-  list-style-type:circle
+  list-style-type: circle;
 }
 
 ul.activity__list li,
-ul.type-of-talent__list li{
+ul.type-of-talent__list li {
   padding-bottom: 33px;
 }
