@@ -1,20 +1,14 @@
 ---
 name: Feature request
-about: Suggest an idea for this project
+about: 기능 추가 요청을 위한 템플릿
 title: ''
 labels: enhancement
 assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
-
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
-
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
+## 목적
+>
+## 추가할 기능 리스트
+- [ ]
+## 참고 사항
