@@ -1,0 +1,19 @@
+.circle {
+  position: relative;
+
+  z-index: 0;
+}
+
+.circle--div {
+  /* 마우스를 따라다니는 원 설정 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 591px;
+  height: 538px;
+  border-radius: 50%;
+  background-color: #bebfff;
+  /* 원을 정가운데로 맞추기위해서 축을-50%이동해줍니다. */
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}

@@ -5,6 +5,7 @@
 /* Components */
 @import "./Components/header.css";
 @import "./Components/footer.css";
+@import "./Components/mouseover.css";
 /* Screens */
 
 /* main */
@@ -80,7 +81,7 @@
 }
 
 .count__support--button button {
-  background-color: var(--light-black);
+  background-color: transparent;
   color: var(--text--hover-light-gray);
   font-size: 30px;
   border-style: none;
