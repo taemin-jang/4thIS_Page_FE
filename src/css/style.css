@@ -5,6 +5,7 @@
 /* Components */
 @import "./Components/header.css";
 @import "./Components/footer.css";
+@import "./Components/mouseover.css";
 /* Screens */
 
 /* main */
@@ -80,7 +81,7 @@
 }
 
 .count__support--button button {
-  background-color: var(--light-black);
+  background-color: transparent;
   color: var(--text--hover-light-gray);
   font-size: 30px;
   border-style: none;
@@ -657,6 +658,74 @@
   color: var(--text--hover-light-gray);
 }
 
+.member__button {
+  margin: 127px 0px 0px 319px;
+}
+
+.member__button span {
+  font-size: 20px;
+  color: var(--text--hover-light-gray);
+}
+
+.member__button button {
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.member__card--total {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 319px;
+  justify-content: space-between;
+}
+
+.member__card {
+  width: 401px;
+  height: 514px;
+  border-radius: 10px;
+  background-color: var(--white);
+  margin-top: 35px;
+}
+
+.member__card--image {
+  width: 386px;
+  height: 344px;
+  border-radius: 10px;
+  background-color: black;
+  margin: 6px 7px 0px;
+}
+
+.member__card--content {
+  margin-left: 29px;
+  margin-top: 11px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.member__card--content p:nth-child(2) {
+  margin-top: 10px;
+}
+.member__card--content p:nth-child(3) {
+  margin-top: 10px;
+}
+
+.member__card--skills {
+  margin-left: 29px;
+  margin-top: 25px;
+}
+
+.member__card--skills span {
+  background-color: #7172d1;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 10px;
+  color: var(--white);
+  padding: 6px 24px;
+}
+
 /* support */
 .support__box {
   height: 637px;
@@ -846,4 +915,48 @@ ul.type-of-talent__list {
 ul.activity__list li,
 ul.type-of-talent__list li {
   padding-bottom: 33px;
+}
+
+.web-banners__box {
+  padding: 142px 0px 147px;
+  background: linear-gradient(#1a2d34, #19214f);
+  height: 1002px;
+}
+
+.web-banners__button button {
+  background-color: rgb(0, 0, 0, 0);
+  color: var(--white);
+  border-color: var(--white);
+  width: 109px;
+  height: 62px;
+  font-size: 30px;
+  margin: 81px 600px 39px 321px;
+  cursor: pointer;
+  float: left;
+}
+
+.web-banners__content {
+  color: var(--white);
+  /* text-align: center; */
+  font-size: 30px;
+  margin-left: 321px;
+  float: left;
+}
+
+.web-banners__content span.blue {
+  color: #4588fc;
+}
+.web-banners__content span.white {
+  color: var(--white);
+}
+
+.web-banners__content p.title {
+  font-weight: 600;
+  font-size: 90px;
+  margin-top: 36px;
+}
+
+.web-banners__content p.sub-title {
+  font-size: 50px;
+  margin-top: 11px;
 }
