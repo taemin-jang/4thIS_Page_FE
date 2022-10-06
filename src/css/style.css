@@ -89,6 +89,192 @@
   margin-bottom: 188.5px;
 }
 
+.banner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 914px;
+  background-color: white;
+}
+
+.banner__title--p-black {
+  font-size: 90px;
+  font-weight: 700;
+  margin: 348px 0px 0px 319px;
+}
+
+.banner__text--p-black {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 31px;
+  margin: 18px 0px 0px 319px;
+}
+
+.banner__support--button button {
+  font-size: 30px;
+  font-weight: 400;
+  border-style: none;
+  color: #6f70b2;
+  background-color: #fff;
+  margin: 127px 0px 0px 319px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.calender__title--p {
+  font-size: 50px;
+  font-weight: 800;
+  color: #e5e5e5;
+  margin: 120px 0px 0px 319px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.calender--image {
+  width: 1006.5px;
+  height: 48px;
+  margin: 93px 0px 0px 451.5px;
+}
+
+.calender__text--p {
+  font-size: 20px;
+  color: #fff;
+  margin: 28px 0px 0px 456px;
+}
+
+.calender__text--p p {
+  float: left;
+  margin: 0px 170px 0px 0px;
+}
+
+.calender__date--p {
+  font-size: 20px;
+  color: #fff;
+  margin: 28px 0px 0px 418px;
+}
+
+.calender__date--p p {
+  width: 116px;
+  height: 54px;
+  float: left;
+  margin: 0px 124px 0px 0px;
+}
+
+.calender__now--color {
+  color: #bebfff;
+}
+
+.target {
+  margin: 76px 0px 0px 319px;
+}
+
+.target__title--p {
+  font-size: 50px;
+  font-weight: 800;
+  color: #e5e5e5;
+  margin: 176px 0px 76px 0px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.target--div {
+  width: 421px;
+  height: 252px;
+  color: #000;
+  background-color: #fff;
+  margin: 0px 10px 0px 0px;
+  border-radius: 10px;
+  float: left;
+}
+
+.target--div h1 {
+  font-size: 20px;
+  margin-left: 53px;
+  padding-top: 43px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.target--div p {
+  font-size: 20px;
+  margin-left: 53px;
+  padding-top: 38px;
+  display: inline-block;
+}
+
+.target--color {
+  color: #fff;
+  background-color: #7576b3;
+}
+
+.field-introduction {
+  margin: 76px 0px 0px 319px;
+}
+
+.field-introduction__title--p {
+  width: 214px;
+  height: 67px;
+  font-size: 50px;
+  font-weight: 800;
+  color: #e5e5e5;
+  margin-top: 176px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.field-introduction__content {
+  margin-top: 176px;
+}
+
+.field-introduction__content--div {
+  width: 1282px;
+  height: 296px;
+  background-color: #000;
+  margin-top: 38px;
+  border-radius: 10px;
+}
+
+.field-introduction__number--p {
+  font-size: 150px;
+  color: #e5e5e5;
+  margin-left: 40px;
+  padding-top: 52px;
+  float: left;
+}
+
+.field-introduction__field--p {
+  font-size: 30px;
+  color: #e5e5e5;
+  margin-left: 35px;
+  padding-top: 49px;
+}
+
+.field-introduction__text--p {
+  font-size: 20px;
+  color: #e5e5e5;
+  margin-left: 33px;
+  padding-top: 29px;
+}
+
+.field-introduction__text--p p {
+  margin-bottom: 6px;
+}
+
+.field-introduction__tag-box {
+  margin: 29px 15px 0px 0px;
+  float: left;
+}
+
+.field-introduction__tag-text--p {
+  width: 95px;
+  height: 41px;
+  background-color: #bebfff;
+  border-radius: 10px;
+  margin-right: 15px;
+  padding: 11px 0px 0px 13px;
+  float: left;
+}
+
 /* chatbot */
 
 .chatbot {
