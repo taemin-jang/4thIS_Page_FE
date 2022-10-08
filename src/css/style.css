@@ -8,6 +8,7 @@
 @import "./Components/mouseover.css";
 @import "./Components/chatbot.css";
 @import "./Components/join_us_detail.css";
+@import "./Components/project_detail.css";
 
 /* Screens */
 @import "./Screens/home.css";
