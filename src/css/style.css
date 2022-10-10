@@ -19,7 +19,6 @@
   width: 100%;
   background-color: var(--light-black);
   margin-top: 100px;
-  padding: 184px 0px 170px;
 }
 
 .banner {
@@ -69,28 +68,17 @@
   margin: 93px 0px 0px 451.5px;
 }
 
-.calender__text--p {
+.calender__content-1--p {
   font-size: 20px;
   color: #fff;
-  margin: 28px 0px 0px 456px;
+}
+
+.calender__content-1--p p {
+  float: left;
 }
 
 .calender__text--p p {
-  float: left;
-  margin: 0px 170px 0px 0px;
-}
-
-.calender__date--p {
-  font-size: 20px;
-  color: #fff;
-  margin: 28px 0px 0px 418px;
-}
-
-.calender__date--p p {
-  width: 116px;
-  height: 54px;
-  float: left;
-  margin: 0px 124px 0px 0px;
+  padding: 28px 0px 0px 456px;
 }
 
 .calender__now--color {
