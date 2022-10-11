@@ -1,27 +1,4 @@
 /**
- * mousemove이벤트를 이용해 움직인다.
-   마우스의 좌표는 clientX와 clientY를 이용해 알수 있다. -> 브라우저 window의 좌표값 위치를 전달한다.
-   pageX, pageY와는 다르다.
- */
-const circle = document.querySelector(".circle");
-
-document.addEventListener("mousemove", (e) => {
-  const mouseX = e.clientX;
-
-  // 만약 스크롤로 인해 해당 페이지를 넘어가면 pageY에서 뺀 값 만큼 더해준다.
-  const mouseY =
-    e.clientY < e.pageY ? e.clientY + (e.pageY - e.clientY) : e.clientY;
-
-  circle.style.left = mouseX + "px";
-
-  circle.style.top = mouseY + "px";
-  // console.log(e);
-  // console.log(e.pageX, e.pageY);
-
-  // console.log(e.screenX, e.screenY);
-});
-
-/**
  * 현재 시간 - 세팅 시간으로 카운트 다운 해주는 함수
  * @param {number} day
  * @param {number} hour
@@ -185,21 +162,5 @@ function whatOver(i) {
   whatEl.addEventListener("mouseout", () => {
     whatEl_black.classList.remove("active");
     whatEl_white.classList.add("active");
-  });
-}
-
-function chatbotUp(e) {
-  let chatbotEl = document.querySelector(".chatbot--button");
-  let clickEl = document.querySelectorAll(".chatbot__click");
-  // let isUp = false;
-  console.log(e);
-  chatbotEl.addEventListener("click", () => {
-    if (e !== 0) {
-      clickEl[0].classList.remove("active");
-      clickEl[1].classList.add("active");
-    } else {
-      clickEl[1].classList.remove("active");
-      clickEl[0].classList.add("active");
-    }
   });
 }
