@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: -20px 318px 0px;
+  margin: -20px 16.71% 0px;
 }
 
 .project__intro-title h1 {
@@ -108,7 +108,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-left: 320px;
+  margin-left: 16.71%;
   height: 52.8vh;
 }
 
@@ -143,7 +143,7 @@
 /* develop */
 
 .develop {
-  margin: 0px 318px;
+  margin: 0px 16.71%;
   color: var(--white);
   font-size: 20px;
 }
@@ -181,6 +181,10 @@
 }
 
 /* develop-function */
+
+.develop-function {
+  margin-bottom: 8.22vh;
+}
 
 .develop-function__title h1 {
   font-size: 50px;
@@ -241,4 +245,52 @@
   height: 51.5vh;
   background-color: var(--black);
   margin: 0px 24px;
+}
+
+/* develop-level */
+
+.develop-level__title > h1 {
+  font-size: 50px;
+  font-weight: 700;
+  border-bottom: 2px solid var(--text--hover-light-gray);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  width: 16.89%;
+}
+
+.develop-level__title > p {
+  letter-spacing: 0.16vw;
+  width: 16.89%;
+  margin-bottom: 70px;
+}
+
+.develop-level__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50vh;
+  padding: 0 14.2% 0 28.4%;
+}
+
+.develop-level__content--div {
+  display: flex;
+  align-items: center;
+}
+
+.develop-level__content--div > input,
+.develop-level__content--div > input:checked {
+  appearance: none;
+  width: 2rem;
+  height: 2rem;
+  border: 4px solid var(--white);
+  border-radius: 50%;
+  margin-right: 80px;
+}
+
+.develop-level__content--div > input:checked {
+  background-color: #2196f3;
+  outline: 4px solid var(--white);
+  border: 8px solid var(--black);
+  width: 2rem;
+  height: 2rem;
 }
