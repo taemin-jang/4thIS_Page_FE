@@ -1,6 +1,7 @@
-.main {
+.no__padding-top {
   width: 100%;
-  height: 5182.98px;
+  /* height: 5182.98px; */
+  padding-top: 0;
 }
 
 .banner {

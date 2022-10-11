@@ -155,3 +155,11 @@ header {
   position: relative;
   z-index: 1;
 }
+
+/* main */
+.main {
+  width: 100%;
+  background-color: var(--light-black);
+  margin-top: 100px;
+  padding: 18.5vh 0 17.47vh;
+}

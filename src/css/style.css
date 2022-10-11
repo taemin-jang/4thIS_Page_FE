@@ -14,10 +14,3 @@
 /* Screens */
 @import "./Screens/home.css";
 @import "./Screens/question.css";
-
-/* main */
-.main {
-  width: 100%;
-  background-color: var(--light-black);
-  margin-top: 100px;
-}
