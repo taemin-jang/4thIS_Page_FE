@@ -1,0 +1,251 @@
+
+/* main */
+.main {
+  width: 100%;
+  background-color: var(--light-black);
+  margin-top: 100px;
+  padding: 184px 0px 170px;
+}
+
+
+
+/* chatbot */
+
+.chatbot {
+  position: fixed;
+  right: 108px;
+  bottom: 80px;
+}
+
+.chatbot--button button {
+  display: flex;
+  width: 108px;
+  height: 108px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border-style: none;
+  background: linear-gradient(to right, #bbbcfc, #6f70b2);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.chatbot__click {
+  display: none;
+}
+
+.chatbot__click.active {
+  display: block;
+}
+
+.chatbot__click-list {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.chatbot__click-list--div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 60px;
+  padding: 33px 0px;
+  width: 251px;
+  height: 92px;
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 86px;
+}
+
+.chatbot--image {
+  margin-top: 10px;
+}
+
+
+
+section.Prj {
+  padding-bottom: 146px;
+}
+
+.prj__title {
+  text-align: center;
+  /* padding-top: 104px; */
+  display: flex;
+  justify-content: flex-start;
+  /* flex-wrap: nowrap; flex에서의 줄바꿈 방지*/
+  white-space: nowrap;
+  /* padding-left: 319px;
+  padding-right: 319px; */
+  margin-left: 319px;
+  margin-right: 1135px;
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--text--hover-light-gray);
+  border-bottom: 3px solid var(--text--hover-light-gray);
+  line-height: 1.5;
+}
+
+/* .prj__title {
+  font-size: 50px;
+  
+  font-weight: bold;
+  color: var(--text--hover-light-gray);
+  border-bottom: 3px solid var(--text--hover-light-gray);
+  line-height: 1.5;
+} */
+
+.prj__subTitle{
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  padding-left: 319px;
+  padding-right: 319px;
+  margin-bottom: 100px;
+  color: var(--text--hover-light-gray);
+  line-height: 1.5;
+}
+
+.prj1__title h1 {
+  text-align: center;
+  /* padding-top: 104px; */
+  display: flex;
+  justify-content: flex-start;
+  /* flex-wrap: nowrap; flex에서의 줄바꿈 방지*/
+  white-space: nowrap;
+  /* padding-left: 319px;
+  padding-right: 319px; */
+  margin-left: 319px;
+  margin-right: 815px;
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--text--hover-light-gray);
+  border-bottom: 3px solid var(--text--hover-light-gray);
+  line-height: 1.5;
+}
+
+.prj1__subTitle{
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  padding-left: 319px;
+  padding-right: 319px;
+
+  color: var(--text--hover-light-gray);
+  line-height: 1.5;
+
+}
+
+
+/* 슬라이드 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+.slider {
+  width: 1280px;
+  height: 401px;
+  margin: 15px auto;
+  margin-bottom: 180px;
+}
+.slider .slick-slide {
+  margin: 15px;
+}
+.slick-prev:before, .slick-next:before {
+  color: #444444;
+}
+
+.wrapper {
+  display: grid;
+  margin-top: 114px;
+  margin-left: 320px;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 345px;
+  column-gap: 35px;
+}
+
+.comp_text {
+margin-top: 65px;
+color: white;
+text-align: center;
+font-size: 20px;
+line-height: 41px;
+}
+
+.comp_link {
+  margin-bottom: -10px;
+  margin-top: -5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: white;
+  font-size: 20px;
+}
+.item:nth-child(1) {
+background-color: black;
+text-align: center;
+}
+.item:nth-child(2) {
+  background-color: #ccc;
+}
+.item:nth-child(3) {
+  background-color: #ccc;
+}
+.grid{
+  display: grid;
+  column-gap: 35px;
+  row-gap: 35px;
+  margin-left: 320px;
+  margin-top: 106px;
+  margin-bottom: 200px;
+  grid-template-columns: 290px 290px 290px 290px;
+  grid-template-rows: 290px 290px 290px;
+}
+
+.g_item:nth-child(1) {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #ccc;
+}
+
+.g_item:nth-child(2) {
+  background-color: #ccc;
+}
+
+.g_item:nth-child(3) {
+  background-color: #ccc;
+}
+
+.g_item:nth-child(4) {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  background-color: #ccc;
+}
+
+.g_item:nth-child(5) {
+  background-color: #ccc;
+}
+
+.g_item:nth-child(6) {
+  background-color: #ccc;
+}
+
+.g_item:nth-child(7) {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-color: #ccc;
+}
+.g_item:nth-child(8) {
+  background-color: #ccc;
+}
