@@ -265,16 +265,17 @@
 }
 
 .develop-level__content {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 50vh;
+  height: 50vh; */
   padding: 0 14.2% 0 28.4%;
 }
 
 .develop-level__content--div {
   display: flex;
   align-items: center;
+  margin-top: -2px;
 }
 
 .develop-level__content--div > input,
@@ -293,4 +294,15 @@
   border: 8px solid var(--black);
   width: 2rem;
   height: 2rem;
+}
+
+.develop-level__content--div label {
+  font-size: 30px;
+}
+
+.develop-level__content-divider {
+  width: 4px;
+  height: 60px;
+  background-color: var(--black);
+  margin-left: 19px;
 }

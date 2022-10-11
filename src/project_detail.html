@@ -191,28 +191,67 @@
               <p>Development Step</p>
             </div>
             <div class="develop-level__content">
-              <div class="develop-level__content--div">
-                <input type="radio" id="level-plan" />
-                <label for="level-plan">기획</label>
+              <div>
+                <div class="develop-level__content--div">
+                  <input type="radio" id="level-plan" checked />
+                  <label for="level-plan">기획</label>
+                </div>
+                <div class="develop-level__content-divider"></div>
+              </div>
+              <div>
+                <div class="develop-level__content--div">
+                  <input
+                    type="radio"
+                    id="level_analysis"
+                    onclick="developLevel(0)"
+                  />
+                  <label for="level_analysis">분석</label>
+                </div>
+                <div class="develop-level__content-divider"></div>
+              </div>
+              <div>
+                <div class="develop-level__content--div">
+                  <input
+                    type="radio"
+                    id="level_design"
+                    onclick="developLevel(1)"
+                    disabled
+                  />
+                  <label for="level_design">설계</label>
+                </div>
+                <div class="develop-level__content-divider"></div>
+              </div>
+              <div>
+                <div class="develop-level__content--div">
+                  <input
+                    type="radio"
+                    id="level_avatar"
+                    onclick="developLevel(2)"
+                    disabled
+                  />
+                  <label for="level_avatar">구현</label>
+                </div>
+                <div class="develop-level__content-divider"></div>
+              </div>
+              <div>
+                <div class="develop-level__content--div">
+                  <input
+                    type="radio"
+                    id="level_test"
+                    onclick="developLevel(3)"
+                    disabled
+                  />
+                  <label for="level_test">테스트</label>
+                </div>
+                <div class="develop-level__content-divider"></div>
               </div>
               <div class="develop-level__content--div">
-                <input type="radio" id="level_analysis" />
-                <label for="level_analysis">분석</label>
-              </div>
-              <div class="develop-level__content--div">
-                <input type="radio" id="level_design" />
-                <label for="level_design">설계</label>
-              </div>
-              <div class="develop-level__content--div">
-                <input type="radio" id="level_avatar" />
-                <label for="level_avatar">구현</label>
-              </div>
-              <div class="develop-level__content--div">
-                <input type="radio" id="level_test" />
-                <label for="level_test">테스트</label>
-              </div>
-              <div class="develop-level__content--div">
-                <input type="radio" id="level_distribute" />
+                <input
+                  type="radio"
+                  id="level_distribute"
+                  onclick="developLevel(4)"
+                  disabled
+                />
                 <label for="level_distribute">배포</label>
               </div>
             </div>
@@ -236,5 +275,6 @@
       </div>
     </footer>
     <script src="./js/home.js"></script>
+    <script src="./js/project-detail.js"></script>
   </body>
 </html>

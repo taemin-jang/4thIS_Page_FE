@@ -16,9 +16,9 @@ document.addEventListener("mousemove", (e) => {
 
   circle.style.top = mouseY + "px";
   // console.log(e);
-  console.log(e.pageX, e.pageY);
+  // console.log(e.pageX, e.pageY);
 
-  console.log(e.screenX, e.screenY);
+  // console.log(e.screenX, e.screenY);
 });
 
 /**
