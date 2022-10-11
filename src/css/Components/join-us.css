@@ -214,13 +214,41 @@
   border-radius: 10px;
   margin-bottom: 38px;
   background-color: #000;
+  padding: 48px 0px 0px 40px;
+}
+
+.field__number {
+  width: 173px;
+  height: 200px;
+  background-color: #153135;
+  float: left;
 }
 
 .field__number--p {
-  width: 172px;
   font-size: 150px;
   font-weight: 800;
   color: #e5e5e5;
+}
+
+.field__name {
+  width: 350px;
+  height: 40px;
+  background-color: #153135;
+  float: left;
+  margin-left: 43px;
+}
+
+.field__name--p {
+  font-size: 30px;
+  font-weight: 800;
+  color: #e5e5e5;
+}
+
+.field__text {
+  width: 300px;
+  height: 60px;
+  background-color: #153135;
+  margin: 23px 0px 0px 245px;
 }
 
 .apply-way__box {
