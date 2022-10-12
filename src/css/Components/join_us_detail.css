@@ -57,6 +57,13 @@ ul.type-of-talent__list li {
   margin-top: -184px;
 }
 
+.web-banners__box-manage {
+  padding: 142px 0px 147px;
+  background: linear-gradient(#FF7E0E, #EC5151);
+  height: 1002px;
+  margin-top: -184px;
+}
+
 .web-banners__button button {
   background-color: rgb(0, 0, 0, 0);
   color: var(--white);
@@ -86,6 +93,9 @@ ul.type-of-talent__list li {
 .web-banners__content span.red {
   color: #FF4600;
 }
+.web-banners__content span.orange {
+  color: #c52b00;
+}
 
 .web-banners__content p.title {
   font-weight: 600;
@@ -95,7 +105,7 @@ ul.type-of-talent__list li {
 
 .web-banners__content p.sub-title {
   font-size: 50px;
-  margin-top: 11px;
+  margin-top: 31px;
 }
 
 /* join */
