@@ -43,9 +43,16 @@ ul.type-of-talent__list li {
   padding-bottom: 33px;
 }
 
-.web-banners__box {
+.web-banners__box-backend {
   padding: 142px 0px 147px;
   background: linear-gradient(#1a2d34, #19214f);
+  height: 1002px;
+  margin-top: -184px;
+}
+
+.web-banners__box-frontend {
+  padding: 142px 0px 147px;
+  background: linear-gradient(#7D11DB, #FF7246);
   height: 1002px;
   margin-top: -184px;
 }
@@ -75,6 +82,9 @@ ul.type-of-talent__list li {
 }
 .web-banners__content span.white {
   color: var(--white);
+}
+.web-banners__content span.red {
+  color: #FF4600;
 }
 
 .web-banners__content p.title {
