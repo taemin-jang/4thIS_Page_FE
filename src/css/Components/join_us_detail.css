@@ -43,7 +43,7 @@ ul.type-of-talent__list li {
   padding-bottom: 33px;
 }
 
-.web-banners__box-backend {
+.web-banners__box-backend, .web-banners__box-frontend, .web-banners__box-manage, .web-banners__box-app, .web-banners__box-etc {
   padding: 142px 0px 147px;
   background: linear-gradient(90deg,#1a2d34, #19214f);
   height: 1002px;
@@ -51,24 +51,19 @@ ul.type-of-talent__list li {
 }
 
 .web-banners__box-frontend {
-  padding: 142px 0px 147px;
   background: linear-gradient(90deg,#7D11DB, #FF7246);
-  height: 1002px;
-  margin-top: -184px;
 }
 
 .web-banners__box-manage {
-  padding: 142px 0px 147px;
   background: linear-gradient(90deg,#FF7E0E, #EC5151);
-  height: 1002px;
-  margin-top: -184px;
 }
 
 .web-banners__box-app {
-  padding: 142px 0px 147px;
   background: linear-gradient(90deg,#46FFA3,#0E7FFF);
-  height: 1002px;
-  margin-top: -184px;
+}
+
+.web-banners__box-etc {
+  background: linear-gradient(90deg,#0E616E,#3A0478);
 }
 
 .web-banners__button button {
