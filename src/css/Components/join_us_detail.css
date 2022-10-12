@@ -66,6 +66,11 @@ ul.type-of-talent__list li {
   background: linear-gradient(90deg,#0E616E,#3A0478);
 }
 
+.web-banners__button {
+  margin: 81px 0px 39px 321px;
+}
+
+
 .web-banners__button button {
   background-color: rgb(0, 0, 0, 0);
   color: var(--white);
@@ -73,9 +78,9 @@ ul.type-of-talent__list li {
   width: 109px;
   height: 62px;
   font-size: 30px;
-  margin: 81px 600px 39px 321px;
+  margin-right: 10px;
   cursor: pointer;
-  float: left;
+  /* float: left; */
 }
 
 .web-banners__content {
@@ -83,7 +88,18 @@ ul.type-of-talent__list li {
   /* text-align: center; */
   font-size: 30px;
   margin-left: 321px;
-  float: left;
+  /* float: left; */
+}
+
+.web-banners__img {
+  float: right;
+  margin: 142px 100px 0px 119px;
+}
+
+@media screen and (max-width:1900px) {
+  .web-banners__img {
+    display: none;
+  }
 }
 
 .web-banners__content span.blue {
