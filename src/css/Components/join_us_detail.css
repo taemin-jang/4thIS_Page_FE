@@ -45,21 +45,28 @@ ul.type-of-talent__list li {
 
 .web-banners__box-backend {
   padding: 142px 0px 147px;
-  background: linear-gradient(#1a2d34, #19214f);
+  background: linear-gradient(90deg,#1a2d34, #19214f);
   height: 1002px;
   margin-top: -184px;
 }
 
 .web-banners__box-frontend {
   padding: 142px 0px 147px;
-  background: linear-gradient(#7D11DB, #FF7246);
+  background: linear-gradient(90deg,#7D11DB, #FF7246);
   height: 1002px;
   margin-top: -184px;
 }
 
 .web-banners__box-manage {
   padding: 142px 0px 147px;
-  background: linear-gradient(#FF7E0E, #EC5151);
+  background: linear-gradient(90deg,#FF7E0E, #EC5151);
+  height: 1002px;
+  margin-top: -184px;
+}
+
+.web-banners__box-app {
+  padding: 142px 0px 147px;
+  background: linear-gradient(90deg,#46FFA3,#0E7FFF);
   height: 1002px;
   margin-top: -184px;
 }
@@ -92,9 +99,6 @@ ul.type-of-talent__list li {
 }
 .web-banners__content span.red {
   color: #FF4600;
-}
-.web-banners__content span.orange {
-  color: #c52b00;
 }
 
 .web-banners__content p.title {
