@@ -91,17 +91,6 @@ ul.type-of-talent__list li {
   /* float: left; */
 }
 
-.web-banners__img {
-  float: right;
-  margin: 142px 100px 0px 119px;
-}
-
-@media screen and (max-width:1900px) {
-  .web-banners__img {
-    display: none;
-  }
-}
-
 .web-banners__content span.blue {
   color: #4588fc;
 }
