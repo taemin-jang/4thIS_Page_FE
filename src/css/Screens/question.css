@@ -9,8 +9,8 @@ section.QnA {
   text-align: center;
   /* padding-top: 104px; */
   display: flex;
-  padding-left: 319px;
-  padding-right: 319px;
+  padding-left: 16.61%;
+  padding-right: 16.61%;
 }
 
 .qna__title h1,
@@ -25,8 +25,8 @@ section.QnA {
 .contact__subTitle {
   font-size: 19px;
   padding-top: 15px;
-  padding-left: 319px;
-  padding-right: 319px;
+  padding-left: 16.61%;
+  padding-right: 16.61%;
   color: var(--text--hover-light-gray);
   line-height: 1.5;
 }
@@ -36,17 +36,17 @@ ul.list {
 }
 .accordion-box {
   width: 100%;
-  max-width: 60%;
-  margin-left: 319px;
-  margin-right: 319px;
+  max-width: 70%;
+  margin-left: 16.61%;
+  margin-right: 16.61%;
   padding-top: 42px;
   cursor: pointer;
 }
 
 .question,
 .kakao {
-  width: 1282px;
-  height: 112px;
+  width: 100%;
+  height: 100%;
   line-height: 60px;
   font-size: 20px;
   background-color: var(--white);
@@ -58,6 +58,7 @@ ul.list {
   vertical-align: middle;
   padding: 23px;
   z-index: 1;
+  position: relative;
 }
 
 span.question__qna-icon,
@@ -78,8 +79,14 @@ span.kakao__text {
   padding: 23px;
 }
 
+.question__hover-icon {
+  position: absolute;
+  top: 45%;
+  right: 35px;
+}
+
 .con {
-  width: 1282px;
+  width: 100%;
   padding: 49px;
   display: none;
   background-color: var(--white);
