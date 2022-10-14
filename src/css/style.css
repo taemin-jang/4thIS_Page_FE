@@ -10,8 +10,9 @@
 @import "./Components/join_us_detail.css";
 @import "./Components/project_detail.css";
 @import "./Components/join-us.css";
+@import "./Components/project.css";
 
 /* Screens */
 @import "./Screens/home.css";
 @import "./Screens/question.css";
-@import "./Screens/project.css";
+
