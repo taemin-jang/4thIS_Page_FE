@@ -122,6 +122,14 @@ ul.type-of-talent__list li {
   font-size: 50px;
   margin-top: 31px;
 }
+/* skill */
+.skill__icon {
+  margin: 4.53% 16.14% 4.89%;
+}
+
+.skill__icon-img {
+  margin-right: 21px;
+}
 
 /* join */
 .join__box {
