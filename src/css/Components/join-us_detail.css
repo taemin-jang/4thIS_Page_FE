@@ -11,8 +11,8 @@ section.activity {
 .field__title {
   text-align: center;
   display: flex;
-  padding-left: 319px;
-  padding-right: 319px;
+  padding-left: 16.61%;
+  padding-right: 16.61%;
 }
 
 .activity__title h1,
@@ -32,8 +32,8 @@ ul.activity__list,
 ul.type-of-talent__list {
   font-size: 25px;
   padding-top: 73px;
-  padding-left: 319px;
-  padding-right: 319px;
+  padding-left: 16.61%;
+  padding-right: 16.61%;
   color: var(--text--hover-light-gray);
   list-style-type: circle;
 }
@@ -67,7 +67,7 @@ ul.type-of-talent__list li {
 }
 
 .web-banners__button {
-  margin: 81px 0px 39px 321px;
+  margin: 81px 0px 39px 16.71%;
 }
 
 
@@ -78,7 +78,7 @@ ul.type-of-talent__list li {
   width: 109px;
   height: 62px;
   font-size: 30px;
-  margin-right: 10px;
+  margin-right: 0.52%;
   cursor: pointer;
   /* float: left; */
 }
@@ -87,19 +87,8 @@ ul.type-of-talent__list li {
   color: var(--white);
   /* text-align: center; */
   font-size: 30px;
-  margin-left: 321px;
+  margin-left: 16.71%;
   /* float: left; */
-}
-
-.web-banners__img {
-  float: right;
-  margin: 142px 100px 0px 119px;
-}
-
-@media screen and (max-width:1900px) {
-  .web-banners__img {
-    display: none;
-  }
 }
 
 .web-banners__content span.blue {
@@ -122,18 +111,26 @@ ul.type-of-talent__list li {
   font-size: 50px;
   margin-top: 31px;
 }
+/* skill */
+.skill__icon {
+  margin: 4.53% 16.14% 4.89%;
+}
+
+.skill__icon-img {
+  margin: 0 1.09% 1.09% 0;
+}
 
 /* join */
 .join__box {
   height: 364px;
-  width: 1282px;
+  width: 66.77%;
   border-radius: 9px;
-  margin: 223px 319px 0px;
-  padding: 103px 0px 102px;
+  margin: 223px 16.61% 0px;
+  padding: 90px 10.11% 90px;
   background-color: var(--black);
 }
 
-.join__content {
+.join__content ,.join__button {
   color: var(--white);
   text-align: center;
   font-size: 30px;
@@ -150,13 +147,12 @@ ul.type-of-talent__list li {
 }
 
 .join__button button {
+  padding: 16px 60px;
   background-color: #7172d1;
-  width: 276px;
-  height: 83px;
   border-radius: 10px;
   font-size: 30px;
   font-weight: 600;
   color: var(--white);
-  margin: 70px 503px 102px;
+  margin: 38px 0 90px;
   cursor: pointer;
 }

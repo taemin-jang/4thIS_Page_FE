@@ -7,11 +7,12 @@
 @import "./Components/footer.css";
 @import "./Components/mouseover.css";
 @import "./Components/chatbot.css";
-@import "./Components/join_us_detail.css";
+@import "./Components/join-us_detail.css";
 @import "./Components/project_detail.css";
 @import "./Components/join-us.css";
+@import "./Components/project.css";
 
 /* Screens */
 @import "./Screens/home.css";
 @import "./Screens/question.css";
-@import "./Screens/project.css";
+
