@@ -41,7 +41,8 @@
   justify-content: space-between;
   align-items: center;
   color: var(--text--hover-light-gray);
-  margin: 28px 430px 0;
+  margin: 28px auto 0;
+  width: 70%;
 }
 
 .count__timer--p-black {
@@ -55,6 +56,22 @@
   font-size: 90px;
   color: var(--text--hover-light-gray);
   margin-bottom: 20px;
+}
+
+.count__name {
+  width: 70%;
+  height: 4.1vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.count__name span {
+  color: var(--text--hover-light-gray);
+  width: 22.2%;
+  text-align: center;
+  font-size: 30px;
 }
 
 .count__support--button {

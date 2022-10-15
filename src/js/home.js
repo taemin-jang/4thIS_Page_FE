@@ -3,31 +3,37 @@
  * @param {number} day
  * @param {number} hour
  * @param {number} minute
+ * @param {number} second
  */
-function countDown(day, hour, minute) {
+function countDown(month, day, hour, minute, second) {
   // 현재 시간 구하기
   const date = new Date();
 
   // 현재 시간의 정보를 얻기 쉽도록 형식 포맷 "00일 오전 00:00"
   const formatDate = new Intl.DateTimeFormat("kr", {
+    month: "numeric",
     day: "numeric",
     hour: "numeric",
     minute: "numeric",
+    second: "numeric",
+    hour12: false,
   }).format(date);
 
   // 현재시간 정규식으로 숫자만 추출 num 배열 [일, 시간, 분]
   let num = formatDate.match(/\d+/g).map((el) => +el);
 
   // 세팅한 시간의 총 합
-  let total = day * 1440 + hour * 60 + minute;
+  let total = day * 86400 + hour * 3600 + minute * 60 + second;
 
   // 현재 시간의 총 합
-  let totalNow = num[0] * 1440 + num[1] * 60 + num[2];
+  let totalNow = num[1] * 86400 + num[2] * 3600 + num[3] * 60 + num[4];
 
   // 각 일, 시간, 분 계산
-  day = parseInt((total - totalNow) / 1440);
-  hour = parseInt((total - totalNow - day * 1440) / 60);
-  minute = total - totalNow - day * 1440 - hour * 60;
+  day =
+    month - num[0] > 0 ? (month - num[0]) * 30 + (day - num[1]) : day - num[1];
+  hour = hour - num[2] < 0 ? 23 - num[2] + hour : hour - num[2];
+  minute = minute - num[3] < 0 ? 59 - num[3] + minute : minute - num[3];
+  second = second - num[4] < 0 ? 60 - num[4] + second : second - num[4];
 
   // 계산된 시간을 각 html 요소에 넣음
   let day_1 = (document.querySelector(
@@ -48,15 +54,21 @@ function countDown(day, hour, minute) {
   let minute_2 = (document.querySelector(
     ".count__timer--p-black:nth-child(8)"
   ).innerHTML = minute % 10);
+  let second_1 = (document.querySelector(
+    ".count__timer--p-black:nth-child(10)"
+  ).innerHTML = parseInt(second / 10));
+  let second_2 = (document.querySelector(
+    ".count__timer--p-black:nth-child(11)"
+  ).innerHTML = second % 10);
 
   // 마감 시간이 도달하면 true 아니면 false를 반환
-  return day <= 0 && hour <= 0 && minute <= 0 ? true : false;
+  return day <= 0 && hour <= 0 && minute <= 0 && second <= 0 ? true : false;
 }
 
 // 1초마다 함수를 실행하는데 만약 마감시간이 돼서 true 값이 나온다면 멈춘다.
 let interval = setInterval(() => {
-  countDown(29, 15, 30);
-  if (countDown(29, 15, 30)) {
+  countDown(11, 2, 0, 0, 0);
+  if (countDown(11, 2, 0, 0, 0)) {
     clearInterval(interval);
   }
 }, 1000);
