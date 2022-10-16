@@ -83,7 +83,7 @@ function slide(cnt) {
   let bulletEl = document.querySelectorAll(".about__bullet-dot");
 
   // -633px씩 이동
-  slideEl.style.transform = `translate(${-633 * cnt}px)`;
+  slideEl.style.transform = `translate(${-11.1 * cnt}%)`;
 
   /**
    * pagination 이동해주는 함수 (해당 요소 클래스에 active를 추가)
