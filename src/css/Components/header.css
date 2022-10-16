@@ -1,13 +1,20 @@
 /* header */
 
 .header {
-  display: flex;
-  justify-content: space-between;
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 20px 320px;
+  height: 60px;
   background-color: #000000;
+}
+
+.header-container {
+  width: 66.37%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .header__menu-list-logo h1 {

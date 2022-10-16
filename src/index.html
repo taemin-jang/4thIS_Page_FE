@@ -41,24 +41,26 @@
     <!-- 헤더 -->
     <header>
       <div class="header">
-        <!-- 로고 -->
-        <div class="header__menu-list-logo">
-          <a href="./index.html">
-            <h1>4thIS</h1>
-          </a>
+        <div class="header-container">
+          <!-- 로고 -->
+          <div class="header__menu-list-logo">
+            <a href="./index.html">
+              <h1>4thIS</h1>
+            </a>
+          </div>
+          <!-- 메뉴 -->
+          <nav>
+            <ul class="header__menu--list">
+              <li><a href="./index.html" class="active">HOME</a></li>
+              <li><a href="./project.html">PROJECT</a></li>
+              <li><a href="./join-us.html">JOIN US</a></li>
+              <li><a href="./question.html">QUESTION</a></li>
+            </ul>
+          </nav>
         </div>
-        <!-- 메뉴 -->
-        <nav>
-          <ul class="header__menu--list">
-            <li><a href="./index.html" class="active">HOME</a></li>
-            <li><a href="./project.html">PROJECT</a></li>
-            <li><a href="./join-us.html">JOIN US</a></li>
-            <li><a href="./question.html">QUESTION</a></li>
-          </ul>
-        </nav>
       </div>
       <div class="header__support--button">
-        <button>4차산업연구회 7기 지원하기</button>
+        <button>4차산업연구회 7기 지금 지원하기</button>
       </div>
     </header>
     <!-- 메인 -->
@@ -373,32 +375,84 @@
         <section class="award">
           <div class="award__title">
             <h1>AWARD</h1>
-          </div>
-          <div class="award__subtitle">
             <p>수상기록</p>
           </div>
           <div class="award__scroll">
-            <div class="award__scroll__content">
-              <p>
-                2022년 08월 '레고로 만드는 Drawing Machine 캡스톤 디자인 캠프'
-                <최우수상>
-              </p>
-              <p>
-                2022년 07월 '한국융합학회 캡스톤디자인 대학생 경진대회 <금상>
-              </p>
-              <p>
-                2022년 06월 '영남이공대학교 미래신산업 수요특화형(AI)교육'
-                <금상>
-              </p>
-              <p>
-                2022년 06월 '영남이공대학교 미래신산업 수요특화형(IoT)교육'
-                <금상>
-              </p>
-              <p>2022년 06월 '영남이공대학교 디자인씽킹 교육' <동상></p>
-              <p>2022년 06월 '영남이공대학교 디자인씽킹 교육' <은상></p>
-              <p>2022년 05월 '전공스터디 그룹운영실적' <우수팀> 역</p>
-              <p>2021년 12월 '명지전문대학 캡스톤디자인경진대회' <장려상></p>
-              <p>2021년 12월 '정보통신공학과 학술제' <은상></p>
+            <div class="award__scroll-content">
+              <div class="award__scroll-content--div">
+                <img
+                  src="/src/assets/images/home/trophy-icon.png"
+                  alt="trophy-icon"
+                />
+                <p>
+                  2022년 08월 '레고로 만드는 Drawing Machine 캡스톤 디자인 캠프'
+                  <최우수상>
+                </p>
+              </div>
+              <div class="award__scroll-content--div">
+                <img
+                  src="/src/assets/images/home/trophy-icon.png"
+                  alt="trophy-icon"
+                />
+                <p>
+                  2022년 07월 '한국융합학회 캡스톤디자인 대학생 경진대회 <금상>
+                </p>
+              </div>
+              <div class="award__scroll-content--div">
+                <img
+                  src="/src/assets/images/home/trophy-icon.png"
+                  alt="trophy-icon"
+                />
+                <p>
+                  2022년 06월 '영남이공대학교 미래신산업 수요특화형(AI)교육'
+                  <금상>
+                </p>
+              </div>
+              <div class="award__scroll-content--div">
+                <img
+                  src="/src/assets/images/home/trophy-icon.png"
+                  alt="trophy-icon"
+                />
+                <p>
+                  2022년 06월 '영남이공대학교 미래신산업 수요특화형(IoT)교육'
+                  <금상>
+                </p>
+              </div>
+              <div class="award__scroll-content--div">
+                <img
+                  src="/src/assets/images/home/trophy-icon.png"
+                  alt="trophy-icon"
+                />
+                <p>2022년 06월 '영남이공대학교 디자인씽킹 교육' <동상></p>
+              </div>
+              <div class="award__scroll-content--div">
+                <img
+                  src="/src/assets/images/home/trophy-icon.png"
+                  alt="trophy-icon"
+                />
+                <p>2022년 06월 '영남이공대학교 디자인씽킹 교육' <은상></p>
+              </div>
+              <div class="award__scroll-content--div">
+                <img
+                  src="/src/assets/images/home/trophy-icon.png"
+                  alt="trophy-icon"
+                />
+                <p>2022년 05월 '전공스터디 그룹운영실적' <우수팀> 역</p>
+              </div>
+              <div class="award__scroll-content--div">
+                <img
+                  src="/src/assets/images/home/trophy-icon.png"
+                  alt="trophy-icon"
+                />
+                <p>2021년 12월 '명지전문대학 캡스톤디자인경진대회' <장려상></p>
+              </div>
+              <div class="award__scroll-content--div">
+                <img
+                  src="/src/assets/images/home/trophy-icon.png"
+                  alt="trophy-icon"
+                />
+                <p>2021년 12월 '정보통신공학과 학술제' <은상></p>
+              </div>
             </div>
           </div>
         </section>
@@ -410,92 +464,95 @@
           <div class="member__subtitle">
             <p>동아리원소개</p>
           </div>
-          <div class="member__button">
-            <button>기획 / 디자인</button>
-            <span>|</span>
-            <button>프론트</button>
-            <span>|</span>
-            <button>백엔드</button>
-            <span>|</span>
-            <button>앱</button>
-          </div>
+
           <div class="member__card--total">
-            <div class="member__card">
-              <div class="member__card--image"></div>
-              <div class="member__card--content">
-                <p>기획</p>
-                <p>5기 김은진</p>
-                <p>하고시픈말을적어라</p>
-              </div>
-              <div class="member__card--skills">
-                <span>skills</span>
-                <span>skills</span>
-                <span>skills</span>
-              </div>
+            <div class="member__button">
+              <button>기획 / 디자인</button>
+              <span>|</span>
+              <button>프론트</button>
+              <span>|</span>
+              <button>백엔드</button>
+              <span>|</span>
+              <button>앱</button>
             </div>
-            <div class="member__card">
-              <div class="member__card--image"></div>
-              <div class="member__card--content">
-                <p>기획</p>
-                <p>5기 김은진</p>
-                <p>하고시픈말을적어라</p>
+            <div class="member__card-column">
+              <div class="member__card">
+                <div class="member__card--image"></div>
+                <div class="member__card--content">
+                  <p>기획</p>
+                  <p>5기 김은진</p>
+                  <p>하고시픈말을적어라</p>
+                </div>
+                <div class="member__card--skills">
+                  <span>skills</span>
+                  <span>skills</span>
+                  <span>skills</span>
+                </div>
               </div>
-              <div class="member__card--skills">
-                <span>skills</span>
-                <span>skills</span>
-                <span>skills</span>
+              <div class="member__card">
+                <div class="member__card--image"></div>
+                <div class="member__card--content">
+                  <p>기획</p>
+                  <p>5기 김은진</p>
+                  <p>하고시픈말을적어라</p>
+                </div>
+                <div class="member__card--skills">
+                  <span>skills</span>
+                  <span>skills</span>
+                  <span>skills</span>
+                </div>
               </div>
-            </div>
-            <div class="member__card">
-              <div class="member__card--image"></div>
-              <div class="member__card--content">
-                <p>기획</p>
-                <p>5기 김은진</p>
-                <p>하고시픈말을적어라</p>
+              <div class="member__card">
+                <div class="member__card--image"></div>
+                <div class="member__card--content">
+                  <p>기획</p>
+                  <p>5기 김은진</p>
+                  <p>하고시픈말을적어라</p>
+                </div>
+                <div class="member__card--skills">
+                  <span>skills</span>
+                  <span>skills</span>
+                  <span>skills</span>
+                </div>
               </div>
-              <div class="member__card--skills">
-                <span>skills</span>
-                <span>skills</span>
-                <span>skills</span>
+              <div class="member__card">
+                <div class="member__card--image"></div>
+                <div class="member__card--content">
+                  <p>기획</p>
+                  <p>5기 김은진</p>
+                  <p>하고시픈말을적어라</p>
+                </div>
+                <div class="member__card--skills">
+                  <span>skills</span>
+                  <span>skills</span>
+                  <span>skills</span>
+                </div>
               </div>
-            </div>
-            <div class="member__card">
-              <div class="member__card--image"></div>
-              <div class="member__card--content">
-                <p>기획</p>
-                <p>5기 김은진</p>
-                <p>하고시픈말을적어라</p>
+              <div class="member__card">
+                <div class="member__card--image"></div>
+                <div class="member__card--content">
+                  <p>기획</p>
+                  <p>5기 김은진</p>
+                  <p>하고시픈말을적어라</p>
+                </div>
+                <div class="member__card--skills">
+                  <span>skills</span>
+                  <span>skills</span>
+                  <span>skills</span>
+                </div>
               </div>
-              <div class="member__card--skills">
-                <span>skills</span>
-                <span>skills</span>
-                <span>skills</span>
-              </div>
-            </div>
-            <div class="member__card">
-              <div class="member__card--image"></div>
-              <div class="member__card--content">
-                <p>기획</p>
-                <p>5기 김은진</p>
-                <p>하고시픈말을적어라</p>
-              </div>
-              <div class="member__card--skills">
-                <span>skills</span>
-                <span>skills</span>
-                <span>skills</span>
-              </div>
-            </div>
-            <div class="member__card">
-              <div class="member__card--image"></div>
-              <div class="member__card--content">
-                <p>기획</p>
-                <p>5기 김은진</p>
-                <p>하고시픈말을적어라</p>
-              </div>
-              <div class="member__card--skills">
-                <span>skills</span>
-                <span>skills</span>
-                <span>skills</span>
+              <div class="member__card">
+                <div class="member__card--image"></div>
+                <div class="member__card--content">
+                  <p>기획</p>
+                  <p>5기 김은진</p>
+                  <p>하고시픈말을적어라</p>
+                </div>
+                <div class="member__card--skills">
+                  <span>skills</span>
+                  <span>skills</span>
+                  <span>skills</span>
+                </div>
               </div>
             </div>
           </div>
