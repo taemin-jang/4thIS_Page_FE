@@ -203,7 +203,6 @@
   color: #fff;
   text-decoration: underline;
   text-underline-position: under;
-  margin-bottom: 103px;
 }
 
 .field-content-box {
@@ -232,8 +231,7 @@
   width: 350px;
   height: 40px;
   background-color: #153135;
-  float: left;
-  margin-left: 43px;
+  margin: 29px 0px 29px 43px;
 }
 
 .field__name--p {
@@ -243,10 +241,23 @@
 }
 
 .field__text {
-  width: 300px;
+  width: 800px;
   height: 60px;
   background-color: #153135;
-  margin: 23px 0px 0px 245px;
+}
+
+.fiels__text--p-1 {
+  width: 700px;
+  height: 27px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+.fiels__text--p-2 {
+  width: 800px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
 }
 
 .apply-way__box {
