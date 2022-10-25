@@ -1,3 +1,19 @@
+
+const open = () => {
+  document.querySelector(".modal").classList.remove("hidden");
+}
+
+const close = () => {
+  document.querySelector(".modal").classList.add("hidden");
+}
+
+document.querySelector(".openBtn").addEventListener("click", open);
+document.querySelector(".closeBtn").addEventListener("click", close);
+document.querySelector(".bg").addEventListener("click", close);
+
+document.querySelector(".openBtn-2").addEventListener("click", open);
+document.querySelector(".closeBtn-2").addEventListener("click", close);
+document.querySelector(".bg").addEventListener("click", close);
 /**
  * mousemove이벤트를 이용해 움직인다.
    마우스의 좌표는 clientX와 clientY를 이용해 알수 있다. -> 브라우저 window의 좌표값 위치를 전달한다.
