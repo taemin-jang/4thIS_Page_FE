@@ -17,6 +17,7 @@
 .count__title h1,
 .about__title h1 {
   font-size: 90px;
+
   text-align: center;
   margin-bottom: 16px;
 }
@@ -54,6 +55,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
 }
 
 .count__timer--p-light-gray {
@@ -87,6 +89,7 @@
   background-color: transparent;
   color: var(--text--hover-light-gray);
   font-size: 30px;
+  font-weight: 700;
   border-style: none;
   border-bottom: 3px solid var(--text--hover-light-gray);
   cursor: pointer;
@@ -107,20 +110,33 @@
   /* width: 5697px; */
   width: 300%;
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   transition: transform 0.5s;
 }
 
 .about__gallery--image {
-  width: 10.69%;
+  width: 10.51%;
+  height: 44.2vh;
+  margin: 0 17px;
+  background-color: white;
 }
 
+/* .about__gallery--image.active {
+  width: 10.51%;
+  height: 44.2vh;
+  margin: 0 17px;
+  background-color: white;
+  display: block;
+} */
+
 .about__gallery--image div {
-  /* float: left; */
-  width: 100%;
+  /* width: ; */
+  /* width: 100%;
   height: 44.2vh;
   background-color: var(--white);
-  margin: auto;
+  background-color: yellow;
+
+  margin: auto; */
 }
 
 .about__bullet {
@@ -251,6 +267,7 @@
   font-size: 20px;
   font-weight: 600;
   color: var(--black);
+  text-align: center;
 }
 
 .about__what-active--black {
@@ -301,6 +318,7 @@
 .about__promotion-content {
   display: flex;
   flex-direction: column;
+  width: calc(1280 / 1903 * 100%);
   color: var(--white);
   margin: 12.64vh auto;
 }
@@ -308,7 +326,7 @@
 .about__promotion-content h1 {
   font-size: 50px;
   font-weight: 600;
-  width: 33.67%;
+  width: 430px;
   margin-bottom: 27px;
 }
 
@@ -389,21 +407,29 @@
   text-align: left;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  height: 46.66vh;
+  /* height: 46.66vh; */
 }
 
 .award__scroll-content--div {
   display: flex;
   align-items: center;
   width: 92%;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
 .award__scroll-content--div img {
-  width: 2.61%;
-  height: 100%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.award__scroll-content--p {
+  display: flex;
+}
+
+.award__scroll-content--div p {
   margin-right: 10px;
 }
 
@@ -437,17 +463,17 @@
 .member__button {
   margin: 127px auto 0px;
   width: 67.26%;
+  font-size: 20px;
 }
 
 .member__button span {
-  font-size: 20px;
   color: var(--text--hover-light-gray);
 }
 
 .member__button button {
   background-color: transparent;
   border: 0;
-  font-size: 20px;
+
   font-weight: 400;
   color: var(--white);
   cursor: pointer;
@@ -554,4 +580,546 @@
   color: var(--white);
   padding: 18px;
   cursor: pointer;
+}
+
+/* media query */
+
+@media all and (min-width: 1024px) {
+}
+
+/* 테블릿 세로, 테블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .main {
+    padding: 80px 0;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .count__title {
+    margin-bottom: 60px;
+  }
+
+  .count__title h1,
+  .about__title h1 {
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  .count__title p,
+  .about__title p {
+    font-size: 20px;
+  }
+
+  .count__text p {
+    font-weight: 700;
+  }
+
+  .count__timer {
+    width: 90%;
+    height: 11vh;
+    margin-top: 30px;
+  }
+
+  .count__timer--p-black {
+    font-size: 60px;
+  }
+
+  .count__name {
+    width: 90%;
+  }
+
+  .count__support--button {
+    margin-top: 60px;
+  }
+
+  .count__support--button button {
+    margin-bottom: 80px;
+  }
+
+  .about__title {
+    margin-bottom: 80px;
+  }
+
+  .about__gallery {
+    width: 900%;
+  }
+
+  .about__gallery--image {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .about__bullet {
+    width: 8%;
+  }
+
+  .about__sub-title {
+    margin: 40px 0;
+  }
+
+  .about__sub-title h1,
+  .about__what-title h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .about__sub-title p {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .about__sub-text p {
+    width: 70%;
+    margin: 0 auto 80px;
+  }
+
+  .about__what {
+    margin-bottom: 80px;
+  }
+
+  .about__what-title {
+    margin-bottom: 60px;
+  }
+
+  .about__what-title p {
+    font-size: 14px;
+  }
+
+  .about__what-active {
+    width: 100%;
+  }
+
+  .about__promotion-content {
+    margin: 80px auto;
+  }
+
+  .about__promotion-content p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .award__title {
+    padding-top: 80px;
+  }
+
+  .award__title h1 {
+    font-size: 40px;
+  }
+
+  .award__title p {
+    font-size: 14px;
+    letter-spacing: 30px;
+  }
+
+  .award__scroll {
+    width: 90%;
+    padding: 40px 0;
+    margin-top: 60px;
+  }
+
+  .award__scroll-content--p {
+    flex-direction: column;
+    font-size: 20px;
+  }
+  /* .about__gallery--image {
+    height: 215px;
+  } */
+
+  .member__title {
+    padding-top: 80px;
+  }
+}
+
+/* 모바일 가로 (해상도 480px ~ 767px)*/
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .main {
+    padding: 80px 0;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .count__title {
+    margin-bottom: 60px;
+  }
+
+  .count__title h1,
+  .about__title h1 {
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  .count__title p,
+  .about__title p {
+    font-size: 20px;
+  }
+
+  .count__text p {
+    font-weight: 700;
+  }
+
+  .count__timer {
+    width: 90%;
+    height: 11vh;
+    margin-top: 30px;
+  }
+
+  .count__timer--p-black {
+    font-size: 60px;
+  }
+
+  .count__name {
+    width: 90%;
+  }
+
+  .count__support--button {
+    margin-top: 60px;
+  }
+
+  .count__support--button button {
+    margin-bottom: 80px;
+  }
+
+  .about__title {
+    margin-bottom: 80px;
+  }
+
+  .about__gallery {
+    width: 900%;
+  }
+
+  .about__gallery--image {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .about__bullet {
+    width: 8%;
+    margin-bottom: 10px;
+  }
+
+  .about__sub-title {
+    margin: 40px 0;
+  }
+
+  .about__sub-title h1,
+  .about__what-title h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .about__sub-title p {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .about__sub-text p {
+    width: 67%;
+    margin: 0 auto 80px;
+  }
+
+  .about__what {
+    margin-bottom: 80px;
+  }
+
+  .about__what-title {
+    margin-bottom: 40px;
+  }
+
+  .about__what-title p {
+    font-size: 14px;
+  }
+
+  .about__promotion-content {
+    margin: 80px auto;
+  }
+
+  .about__promotion-content h1 {
+    font-size: 40px;
+    width: 340px;
+  }
+
+  .about__promotion-content p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .award__title {
+    padding-top: 80px;
+  }
+
+  .award__title h1,
+  .member__title h1 {
+    font-size: 40px;
+  }
+
+  .award__title p {
+    font-size: 14px;
+    letter-spacing: 30px;
+  }
+
+  .award__scroll {
+    width: 90%;
+    padding: 40px 0;
+    margin-top: 40px;
+  }
+
+  .award__scroll-content--p {
+    flex-direction: column;
+    font-size: 16px;
+  }
+
+  .member__title {
+    padding-top: 80px;
+  }
+
+  .member__subtitle {
+    padding-top: 10px;
+  }
+
+  .member__subtitle p {
+    font-size: 14px;
+  }
+
+  .member__button {
+    font-size: 30px;
+    margin-top: 40px;
+    width: 100%;
+    min-width: 260px;
+  }
+
+  .member__button button {
+    font-size: 22px;
+    padding: 0;
+  }
+
+  .member__card-column {
+    width: 100%;
+    /* flex-wrap: nowrap; */
+  }
+
+  .member__card {
+    width: 310px;
+    height: 400px;
+  }
+
+  .member__card--image {
+    width: 95%;
+    height: calc(250 / 400 * 100%);
+    margin: 6px auto 0;
+  }
+}
+
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media all and (max-width: 479px) {
+  .main {
+    padding: 40px 0;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .count__title {
+    margin-bottom: 40px;
+  }
+
+  .count__title h1,
+  .about__title h1 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .count__title p,
+  .about__title p {
+    font-size: 14px;
+  }
+
+  .count__text p {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .count__timer {
+    width: 90%;
+    height: 8vh;
+    margin-top: 10px;
+  }
+
+  .count__timer--p-black {
+    font-size: 40px;
+    width: 10%;
+  }
+
+  .count__timer--p-light-gray {
+    font-size: 60px;
+  }
+
+  .count__name {
+    width: 90%;
+  }
+
+  .count__name span {
+    font-size: 14px;
+  }
+
+  .count__support--button {
+    margin-top: 40px;
+  }
+
+  .count__support--button button {
+    margin-bottom: 80px;
+  }
+
+  .about__gallery--image {
+    height: 60px;
+  }
+
+  .about__title {
+    margin-bottom: 40px;
+  }
+
+  .about__gallery {
+    width: 900%;
+  }
+
+  .about__gallery--image {
+    width: 220px;
+    height: 160px;
+    margin: 0 auto;
+  }
+
+  .about__bullet {
+    width: 16%;
+  }
+
+  .about__sub-title {
+    margin-bottom: 40px;
+  }
+
+  .about__sub-title h1,
+  .about__what-title h1,
+  .award__title h1,
+  .member__title h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+
+  .about__sub-title p {
+    font-size: 12px;
+    letter-spacing: 0px;
+  }
+
+  .about__sub-text p {
+    width: 80%;
+    font-size: 12px;
+    line-height: 22px;
+    margin: 0 auto 80px;
+  }
+
+  .about__what {
+    margin-bottom: 80px;
+  }
+
+  .about__what-title {
+    margin-bottom: 40px;
+  }
+
+  .about__what-title p {
+    font-size: 12px;
+    letter-spacing: 6px;
+  }
+
+  .about__what-active--div {
+    height: 120px;
+  }
+
+  .about__what-active--div h1 {
+    font-size: 20px;
+  }
+
+  .about__what-active--div p {
+    font-size: 16px;
+  }
+
+  .about__promotion-content {
+    margin: 80px auto;
+  }
+
+  .about__promotion-content h1 {
+    font-size: 28px;
+    width: 240px;
+  }
+
+  .about__promotion-content p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .award__title p {
+    font-size: 12px;
+    letter-spacing: 25px;
+    margin: 0 0 0 24px;
+  }
+
+  .award__scroll {
+    width: 90%;
+    padding: 40px 0;
+    margin-top: 40px;
+  }
+
+  .award__scroll-content--p {
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .member__title {
+    padding-top: 80px;
+  }
+
+  .member__subtitle {
+    padding-top: 0px;
+  }
+
+  .member__subtitle p {
+    font-size: 12px;
+    letter-spacing: 12px;
+  }
+
+  .member__button {
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: -30px;
+    width: 50%;
+    min-width: 260px;
+  }
+
+  .member__card-column {
+    width: 100%;
+    max-width: 330px;
+  }
+
+  .member__card {
+    width: 100%;
+  }
+
+  .member__card--image {
+    width: 95%;
+    height: 260px;
+    margin: 6px auto 0px;
+  }
+
+  .member__card--content {
+    margin-left: 10px;
+  }
+
+  .member__card--content p {
+    font-size: 12px;
+  }
 }
