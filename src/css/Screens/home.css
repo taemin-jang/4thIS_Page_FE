@@ -463,16 +463,17 @@
 .member__button {
   margin: 127px auto 0px;
   width: 67.26%;
-  font-size: 20px;
 }
 
 .member__button span {
   color: var(--text--hover-light-gray);
+  font-size: 20px;
 }
 
 .member__button button {
   background-color: transparent;
   border: 0;
+  font-size: 20px;
 
   font-weight: 400;
   color: var(--white);
@@ -731,6 +732,69 @@
   .member__title {
     padding-top: 80px;
   }
+
+  .member__subtitle {
+    padding-top: 10px;
+  }
+
+  .member__subtitle p {
+    font-size: 14px;
+  }
+
+  .member__button {
+    font-size: 30px;
+    margin-top: 40px;
+    width: 50%;
+    min-width: 360px;
+  }
+
+  .member__button button {
+    font-size: 22px;
+    padding: 0;
+  }
+
+  .member__card-column {
+    width: 100%;
+    /* flex-wrap: nowrap; */
+  }
+
+  .member__card {
+    width: 310px;
+    height: 400px;
+  }
+
+  .member__card--image {
+    width: 95%;
+    height: calc(250 / 400 * 100%);
+    margin: 6px auto 0;
+  }
+
+  .member__card--content {
+    margin-left: 10px;
+  }
+
+  .support__box {
+    margin: 80px auto 0px;
+    width: 100%;
+  }
+
+  .support__content {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .support__content p {
+    font-size: 30px;
+  }
+
+  .support__content p:last-child {
+    font-size: 20px;
+  }
+
+  .support__button {
+    margin-top: 40px;
+  }
 }
 
 /* 모바일 가로 (해상도 480px ~ 767px)*/
@@ -889,8 +953,8 @@
   .member__button {
     font-size: 30px;
     margin-top: 40px;
-    width: 100%;
-    min-width: 260px;
+    width: 50%;
+    min-width: 360px;
   }
 
   .member__button button {
@@ -912,6 +976,33 @@
     width: 95%;
     height: calc(250 / 400 * 100%);
     margin: 6px auto 0;
+  }
+
+  .member__card--content {
+    margin-left: 10px;
+  }
+
+  .support__box {
+    margin: 80px auto 0px;
+    width: 100%;
+  }
+
+  .support__content {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .support__content p {
+    font-size: 30px;
+  }
+
+  .support__content p:last-child {
+    font-size: 20px;
+  }
+
+  .support__button {
+    margin-top: 40px;
   }
 }
 
@@ -1095,9 +1186,14 @@
   .member__button {
     font-size: 16px;
     margin-top: 40px;
-    margin-bottom: -30px;
+    /* margin-bottom: -20px; */
     width: 50%;
     min-width: 260px;
+  }
+
+  .member__button button {
+    font-size: 16px;
+    padding: 0;
   }
 
   .member__card-column {
@@ -1107,6 +1203,7 @@
 
   .member__card {
     width: 100%;
+    height: 380px;
   }
 
   .member__card--image {
@@ -1121,5 +1218,42 @@
 
   .member__card--content p {
     font-size: 12px;
+  }
+
+  .member__card--skills {
+    margin: 14px auto;
+    width: 70%;
+  }
+
+  .member__card--skills span {
+    font-size: 12px;
+  }
+
+  .support__box {
+    margin: 40px auto 0px;
+    width: 100%;
+  }
+
+  .support__content {
+    width: 100%;
+    /* max-width: 600px; */
+    margin: 0 auto;
+  }
+
+  .support__content p {
+    font-size: 18px;
+  }
+
+  .support__content p:last-child {
+    font-size: 12px;
+  }
+
+  .support__button {
+    margin-top: 40px;
+  }
+
+  .support__button button {
+    width: 200px;
+    font-size: 20px;
   }
 }

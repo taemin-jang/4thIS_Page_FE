@@ -85,7 +85,6 @@
 
   background: #000000;
   list-style-type: none;
-  -webkit-font-smoothing: antialiased;
 
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
@@ -167,20 +166,12 @@
 @media all and (min-width: 768px) and (max-width: 1023px) {
   /* header */
   .header {
-    height: 60px;
+    height: 120px;
   }
 
   .header-container {
     width: 100%;
     padding-left: 50px;
-  }
-
-  .header__menu-list-logo h1 {
-    font-size: 40px;
-  }
-
-  .header__support--button button {
-    font-size: 30px;
   }
 
   .header__menu-hamburgur .header__menu--list {
@@ -195,18 +186,6 @@
     padding: 30px 0;
   }
 
-  .header__menu--list a {
-    font-size: 40px;
-  }
-
-  .header__menu--list a.active {
-    font-size: 40px;
-  }
-
-  .header__menu--list a:hover {
-    font-size: 40px;
-  }
-
   .header__menu-hamburgur {
     display: block;
   }
@@ -215,7 +194,7 @@
 /* 모바일 가로 (해상도 480px ~ 767px)*/
 @media all and (min-width: 480px) and (max-width: 767px) {
   .header {
-    height: 60px;
+    height: 120px;
   }
 
   .header-container {
@@ -224,11 +203,11 @@
   }
 
   .header__menu-list-logo h1 {
-    font-size: 60px;
+    /* font-size: 60px; */
   }
 
   .header__support--button button {
-    font-size: 30px;
+    /* font-size: 30px; */
   }
 
   .header__menu-hamburgur .header__menu--list {
@@ -251,18 +230,6 @@
     padding: 30px 0;
   }
 
-  .header__menu--list a {
-    font-size: 60px;
-  }
-
-  .header__menu--list a.active {
-    font-size: 60px;
-  }
-
-  .header__menu--list a:hover {
-    font-size: 60px;
-  }
-
   .header__menu-hamburgur input:checked ~ ul {
     transform: translate(-81%, 0);
   }
@@ -271,7 +238,7 @@
 /* 모바일 세로 (해상도 ~ 479px)*/
 @media all and (max-width: 479px) {
   .header {
-    height: 150px;
+    /* height: 150px; */
   }
 
   .header-container {
@@ -280,7 +247,7 @@
   }
 
   .header__menu-list-logo h1 {
-    font-size: 60px;
+    /* font-size: 60px; */
   }
 
   .header__support--button button {
@@ -305,18 +272,6 @@
 
   .header__menu-hamburgur .header__menu--list li {
     padding: 30px 0;
-  }
-
-  .header__menu--list a {
-    font-size: 60px;
-  }
-
-  .header__menu--list a.active {
-    font-size: 60px;
-  }
-
-  .header__menu--list a:hover {
-    font-size: 60px;
   }
 
   .header__menu-hamburgur input:checked ~ ul {
