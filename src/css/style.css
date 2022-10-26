@@ -3,7 +3,6 @@
 @import "./variable.css";
 
 /* Components */
-@import "./Components/media-query.css";
 @import "./Components/header.css";
 @import "./Components/footer.css";
 @import "./Components/mouseover.css";

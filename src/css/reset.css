@@ -147,7 +147,8 @@ a:visited {
 }
 
 header {
-  position: relative;
+  position: sticky;
+  top: 0px;
   z-index: 2;
 }
 
@@ -165,6 +166,5 @@ footer {
 .main {
   width: 100%;
   background-color: var(--light-black);
-  margin-top: 100px;
   padding: 18.5vh 0 17.47vh;
 }
