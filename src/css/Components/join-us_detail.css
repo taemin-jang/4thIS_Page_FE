@@ -97,6 +97,10 @@ ul.activity__list, ul.type-of-talent__list {
     padding-bottom: 146px;
   }
 
+  .activity__title, .type-of-talent__title, .field__title {
+    padding-left: 15.61%;
+  }
+
   .activity__title h1, .type-of-talent__title h1, .field__title h1 {
     font-size: 50px;
   }
