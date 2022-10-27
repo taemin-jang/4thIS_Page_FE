@@ -751,6 +751,9 @@
   .member__title {
     padding-top: 80px;
   }
+  .member__title h1 {
+    font-size: 40px;
+  }
 
   .member__subtitle {
     padding-top: 10px;
@@ -763,7 +766,8 @@
   .member__button {
     font-size: 30px;
     margin-top: 40px;
-    width: 50%;
+    /* margin-left: 53px; */
+    width: 30%;
     min-width: 360px;
   }
 
@@ -776,6 +780,11 @@
     width: 100%;
     /* flex-wrap: nowrap; */
   }
+  .member__card-column--div.active {
+    width: 100%;
+    justify-content: center;
+    /* justify-content: center; */
+  }
 
   .member__card {
     width: 310px;
@@ -784,12 +793,29 @@
 
   .member__card--image {
     width: 95%;
-    height: calc(250 / 400 * 100%);
-    margin: 6px auto 0;
+    /* height: calc(250 / 400 * 100%); */
   }
 
+  .member__card--image img {
+    width: 306px;
+    height: 264px;
+    border-radius: 10px;
+    background-color: black;
+    margin: 6px 7px 0px;
+  }
   .member__card--content {
     margin-left: 10px;
+    /* margin-top: 20px; */
+    font-size: 15px;
+  }
+
+  .member__card--skills {
+    margin-top: 14px;
+  }
+
+  .member__card--skills span {
+    font-size: 15px;
+    padding: 3px 15px;
   }
 
   .support__box {
@@ -986,18 +1012,29 @@
   }
 
   .member__card {
-    width: 310px;
-    height: 400px;
+    width: 100%;
+    height: 500px;
+    margin-right: 0px;
   }
 
   .member__card--image {
     width: 95%;
-    height: calc(250 / 400 * 100%);
+    /* height: calc(250 / 400 * 100%); */
+    margin: 6px auto 0;
+  }
+
+  .member__card--image img {
+    width: 100%;
     margin: 6px auto 0;
   }
 
   .member__card--content {
     margin-left: 10px;
+    font-size: 18px;
+  }
+
+  .member__card--skills {
+    margin-top: 14px;
   }
 
   .support__box {
@@ -1213,17 +1250,31 @@
   .member__card-column {
     width: 100%;
     max-width: 330px;
+    margin: 0 auto;
+  }
+  .member__card-column--div.active {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .member__card {
     width: 100%;
     height: 380px;
+    margin: 35px auto 0;
   }
 
   .member__card--image {
     width: 95%;
     height: 260px;
-    margin: 6px auto 0px;
+    margin: 6px auto 0;
+  }
+  .member__card--image img {
+    width: 100%;
+    height: 264px;
+    border-radius: 10px;
+    /* background-color: black; */
+    margin: 0;
   }
   .member__card--content {
     margin-left: 10px;
@@ -1235,7 +1286,7 @@
 
   .member__card--skills {
     margin: 14px auto;
-    width: 70%;
+    /* width: 70%; */
   }
 
   .member__card--skills span {
