@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale = 5.0, user-scalable=yes, viewport-fit=cover"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <!-- 사이트 제목 -->
@@ -142,15 +145,40 @@
             <p>4th Industrial Society</p>
           </div>
           <div class="about__gallery">
-            <div class="about__gallery--image active"><div>1</div></div>
-            <div class="about__gallery--image active"><div>2</div></div>
-            <div class="about__gallery--image active"><div>3</div></div>
-            <div class="about__gallery--image"><div>4</div></div>
-            <div class="about__gallery--image"><div>5</div></div>
-            <div class="about__gallery--image"><div>6</div></div>
+            <div class="about__gallery--image">
+              <img
+                src="/src/assets/images/home/about__gallery--image/about__gallery--image-1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="about__gallery--image">
+              <img
+                src="/src/assets/images/home/about__gallery--image/about__gallery--image-2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="about__gallery--image">
+              <img
+                src="/src/assets/images/home/about__gallery--image/about__gallery--image-3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="about__gallery--image">
+              <img
+                src="/src/assets/images/home/about__gallery--image/about__gallery--image-6.jpg"
+                alt=""
+              />
+            </div>
+            <div class="about__gallery--image">
+              <img
+                src="/src/assets/images/home/about__gallery--image/about__gallery--image-7.jpg"
+                alt=""
+              />
+            </div>
+            <!-- <div class="about__gallery--image"><div>6</div></div>
             <div class="about__gallery--image"><div>7</div></div>
             <div class="about__gallery--image"><div>8</div></div>
-            <div class="about__gallery--image"><div>9</div></div>
+            <div class="about__gallery--image"><div>9</div></div> -->
           </div>
           <div class="about__bullet">
             <div class="about__bullet-dot active"></div>
@@ -501,16 +529,18 @@
 
           <div class="member__card--total">
             <div class="member__button">
-              <button>기획 / 디자인</button>
+              <button class="active" onclick="changefront(0)">
+                기획 / 디자인
+              </button>
               <span>|</span>
-              <button>프론트</button>
+              <button onclick="changefront(1)">프론트</button>
               <span>|</span>
-              <button>백엔드</button>
+              <button onclick="changefront(2)">백엔드</button>
               <span>|</span>
-              <button>앱</button>
+              <button onclick="changefront(3)">앱</button>
             </div>
             <div class="member__card-column">
-              <div class="member__card-column-design">
+              <div class="member__card-column--div active">
                 <div class="member__card">
                   <div class="member__card--image">
                     <img src="/src/assets/images/home/member/김은진.jpg" />
@@ -572,7 +602,7 @@
                   </div>
                 </div>
               </div>
-              <div class="member__card-column-front">
+              <div class="member__card-column--div">
                 <div class="member__card">
                   <div class="member__card--image">
                     <img src="/src/assets/images/home/member/장태민.png" />
@@ -649,7 +679,7 @@
                   </div>
                 </div>
               </div>
-              <div class="member__card-column-back">
+              <div class="member__card-column--div">
                 <div class="member__card">
                   <div class="member__card--image">
                     <img src="/src/assets/images/home/member/김민우.jpg" />
@@ -726,7 +756,7 @@
                   </div>
                 </div>
               </div>
-              <div class="member__card-column-app">
+              <div class="member__card-column--div">
                 <div class="member__card">
                   <div class="member__card--image">
                     <img src="/src/assets/images/home/member/유민상.png" />
@@ -760,7 +790,7 @@
               </p>
             </div>
             <div class="support__button">
-              <button onclick="window.open('https://pf.kakao.com/_zbgxlxj') ">
+              <button onclick="location.href='join-us.html'">
                 지원하러 가기
               </button>
             </div>

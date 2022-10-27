@@ -35,6 +35,27 @@ function countDown(month, day, hour, minute, second) {
   minute = minute - num[3] < 0 ? 59 - num[3] + minute : minute - num[3];
   second = second - num[4] < 0 ? 60 - num[4] + second : second - num[4];
 
+  if (minute < 0) {
+    if (hour < 0) {
+      if (day > 0) {
+        day--;
+        hour = 24 + hour;
+      } else if (day === 0) {
+        hour = 0;
+      }
+    }
+  }
+
+  if (hour < 0) {
+    if (day > 0) {
+      day--;
+      hour = 24 + hour;
+    } else if (day === 0) {
+      hour = 0;
+    }
+  }
+
+  console.log(num[2]);
   // 계산된 시간을 각 html 요소에 넣음
   let day_1 = (document.querySelector(
     ".count__timer--p-black:nth-child(1)"
@@ -79,11 +100,27 @@ let interval = setInterval(() => {
  */
 function slide(cnt) {
   // 이동시킬 html 요소 선택
+  let bodyEl = document.querySelector("body").getBoundingClientRect().width;
   let slideEl = document.querySelector(".about__gallery");
   let bulletEl = document.querySelectorAll(".about__bullet-dot");
+  let galleryEl = document.querySelectorAll(".about__gallery--image");
 
   // -633px씩 이동
-  slideEl.style.transform = `translate(${-11.1 * cnt}%)`;
+  // slideEl.style.transform = `translate3d(${-11.08 * cnt}%, 0px, 0px)`;
+  // slideEl.style.width = `${galleryEl.length * 100}%`;
+  console.log(bodyEl, (3170 / bodyEl) * 100);
+
+  if (bodyEl >= 1903) {
+    slideEl.style.width = `${(3170 / bodyEl) * 100}%`;
+    slideEl.style.transform = `translate3d(${-20 * cnt}%, 0px, 0px)`;
+  } else if (bodyEl >= 1024 && bodyEl < 1903) {
+    slideEl.style.width = `${(3170 / bodyEl) * 100}%`;
+    slideEl.style.transform = `translate3d(${-20 * cnt}%, 0px, 0px)`;
+  } else if (bodyEl < 1024) {
+    slideEl.style.width = `${galleryEl.length * 100}%`;
+    slideEl.style.transform = `translate3d(${-bodyEl * cnt}px, 0px, 0px)`;
+    console.log(-bodyEl * cnt, "hi");
+  }
 
   /**
    * pagination 이동해주는 함수 (해당 요소 클래스에 active를 추가)
@@ -106,6 +143,18 @@ function slide(cnt) {
       // 7 ~ 9
       bulletEl[2].classList.add("active");
     }
+
+    // if (cnt < 1) {
+    //   galleryEl[6].classList.remove("active");
+    //   galleryEl[7].classList.remove("active");
+    //   galleryEl[8].classList.remove("active");
+    //   galleryEl[0].classList.add("active");
+    //   galleryEl[1].classList.add("active");
+    //   galleryEl[2].classList.add("active");
+    // } else if (cnt >= 1) {
+    //   galleryEl[cnt - 1].classList.remove("active");
+    //   galleryEl[cnt + 2].classList.add("active");
+    // }
   }
   pagination(cnt);
 
@@ -128,10 +177,19 @@ function slide(cnt) {
   cnt++;
 
   // 이미지가 마지막 3장 보이면 다시 처음으로 돌아가기
-  if (cnt > 6) {
-    cnt = 0;
-  }
+  // if (cnt > galleryEl.length - 3) {
+  //   cnt = 0;
+  // }
 
+  if (bodyEl >= 1024) {
+    if (cnt > galleryEl.length - 3) {
+      cnt = 0;
+    }
+  } else if (bodyEl < 1024) {
+    if (cnt > galleryEl.length - 1) {
+      cnt = 0;
+    }
+  }
   // 5초간 반복
   setTimeout(() => {
     slide(cnt);
@@ -176,3 +234,41 @@ function whatOver(i) {
     whatEl_white.classList.add("active");
   });
 }
+
+// member 부분
+let j = 0;
+
+function changefront(i) {
+  let memberEl = document.querySelectorAll(".member__button button");
+  let memberElCol = document.querySelectorAll(".member__card-column--div");
+
+  memberElCol[i].classList.add("active");
+  memberEl[i].classList.add("active");
+  memberEl[i].style.color = "#6768ab";
+  memberEl[i].style.borderBottom = "5px solid #6768ab";
+  memberEl[i].style.paddingBottom = "3px";
+  memberEl[i].style.borderRadius = "5px";
+
+  if (j !== i) {
+    memberElCol[j].classList.remove("active");
+    memberEl[j].style.color = "#ffffff";
+    memberEl[j].style.borderBottom = "0px solid #6768ab";
+  }
+
+  j = i;
+
+  console.log(memberEl, memberElCol);
+}
+memberEl.addEventListener("click", changefront);
+
+/* 
+document.querySelector(".클래스 #아이디 div")
+let changeEl = document.querySelectorAll()
+changeEl[2]
+
+console.log(changeEl);
+
+active 클래스를 주자
+기본으로 기획 / 디자인을 보여주자
+
+*/
