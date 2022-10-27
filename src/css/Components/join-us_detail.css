@@ -14,33 +14,39 @@
   text-align: left;
 }
 
-.activity__title h1, .type-of-talent__title h1 {
+.activity__title h1,
+.type-of-talent__title h1 {
   border-bottom: 3px solid var(--text--hover-light-gray);
-  }
+}
 
-ul.activity__list, ul.type-of-talent__list {
+ul.activity__list,
+ul.type-of-talent__list {
   color: var(--text--hover-light-gray);
   list-style-type: circle;
 }
 
-.web-banners__box-backend, .web-banners__box-frontend, .web-banners__box-manage, .web-banners__box-app, .web-banners__box-etc {
-  background: linear-gradient(90deg,#1a2d34, #19214f);
+.web-banners__box-backend,
+.web-banners__box-frontend,
+.web-banners__box-manage,
+.web-banners__box-app,
+.web-banners__box-etc {
+  background: linear-gradient(90deg, #1a2d34, #19214f);
 }
 
 .web-banners__box-frontend {
-  background: linear-gradient(90deg,#7D11DB, #FF7246);
+  background: linear-gradient(90deg, #7d11db, #ff7246);
 }
 
 .web-banners__box-manage {
-  background: linear-gradient(90deg,#FF7E0E, #EC5151);
+  background: linear-gradient(90deg, #ff7e0e, #ec5151);
 }
 
 .web-banners__box-app {
-  background: linear-gradient(90deg,#46FFA3,#0E7FFF);
+  background: linear-gradient(90deg, #46ffa3, #0e7fff);
 }
 
 .web-banners__box-etc {
-  background: linear-gradient(90deg,#0E616E,#3A0478);
+  background: linear-gradient(90deg, #0e616e, #3a0478);
 }
 
 .web-banners__button button {
@@ -62,15 +68,17 @@ ul.activity__list, ul.type-of-talent__list {
   color: var(--white);
 }
 .web-banners__content span.red {
-  color: #FF4600;
+  color: #ff4600;
 }
 
 /* join */
 .join__box {
   background-color: var(--black);
+  margin: 0 auto;
 }
 
-.join__content ,.join__button {
+.join__content,
+.join__button {
   color: var(--white);
   text-align: center;
 }
@@ -79,39 +87,52 @@ ul.activity__list, ul.type-of-talent__list {
   background-color: #7172d1;
   color: var(--white);
   cursor: pointer;
+  border: none;
 }
 
 /* media query */
 @media all and (min-width: 1024px) {
-
-  section.web-banners, section.field, section.activity {
+  section.web-banners,
+  section.field,
+  section.activity {
     padding-bottom: 146px;
   }
 
-  .activity__title, .type-of-talent__title, .field__title {
+  .activity__title,
+  .type-of-talent__title,
+  .field__title {
     padding-left: 15.61%;
   }
 
-  .activity__title h1, .type-of-talent__title h1, .field__title h1 {
+  .activity__title h1,
+  .type-of-talent__title h1,
+  .field__title h1 {
     font-size: 50px;
   }
 
-  .activity__title h1, .type-of-talent__title h1 {
+  .activity__title h1,
+  .type-of-talent__title h1 {
     line-height: 1.5;
   }
 
-  ul.activity__list, ul.type-of-talent__list {
+  ul.activity__list,
+  ul.type-of-talent__list {
     font-size: 25px;
     padding-top: 73px;
     padding-left: 16.61%;
     padding-right: 16.61%;
   }
 
-  ul.activity__list li, ul.type-of-talent__list li {
-  padding-bottom: 33px;
+  ul.activity__list li,
+  ul.type-of-talent__list li {
+    padding-bottom: 33px;
   }
 
-  .web-banners__box-backend, .web-banners__box-frontend, .web-banners__box-manage, .web-banners__box-app, .web-banners__box-etc {
+  .web-banners__box-backend,
+  .web-banners__box-frontend,
+  .web-banners__box-manage,
+  .web-banners__box-app,
+  .web-banners__box-etc {
     padding: 142px 0px 147px;
     height: 1002px;
     margin-top: -184px;
@@ -155,17 +176,18 @@ ul.activity__list, ul.type-of-talent__list {
 
   /* join */
   .join__box {
-  height: 364px;
-  width: 66.77%;
-  border-radius: 9px;
-  margin: 223px 16.61% 0px;
-  padding: 90px 10.11% 90px;
+    height: 364px;
+    width: 66.77%;
+    border-radius: 9px;
+    margin: 223px auto 0px;
+    padding: 90px 10.11% 90px;
   }
 
-  .join__content ,.join__button {
+  .join__content,
+  .join__button {
     font-size: 30px;
   }
-  
+
   .join__content p:nth-child(2) {
     padding-top: 41px;
     line-height: 45px;
@@ -178,41 +200,51 @@ ul.activity__list, ul.type-of-talent__list {
     font-size: 30px;
     margin: 38px 0 90px;
   }
-
-
 }
-
 
 /* 테블릿 세로, 테블릿 가로 (해상도 768px ~ 1023px)*/
 @media all and (min-width: 768px) and (max-width: 1023px) {
-  section.web-banners, section.field, section.activity {
+  section.web-banners,
+  section.field,
+  section.activity {
     padding-bottom: 50px;
   }
 
-  .activity__title, .type-of-talent__title, .field__title {
+  .activity__title,
+  .type-of-talent__title,
+  .field__title {
     padding-left: 10.61%;
   }
 
-  .activity__title h1, .type-of-talent__title h1, .field__title h1 {
+  .activity__title h1,
+  .type-of-talent__title h1,
+  .field__title h1 {
     font-size: 30px;
   }
 
-  .activity__title h1, .type-of-talent__title h1 {
+  .activity__title h1,
+  .type-of-talent__title h1 {
     line-height: 1.5;
   }
 
-  ul.activity__list, ul.type-of-talent__list {
+  ul.activity__list,
+  ul.type-of-talent__list {
     font-size: 22px;
     padding-top: 45px;
     padding-left: 10.61%;
     padding-right: 10.61%;
   }
 
-  ul.activity__list li, ul.type-of-talent__list li {
+  ul.activity__list li,
+  ul.type-of-talent__list li {
     padding-bottom: 15px;
   }
 
-  .web-banners__box-backend, .web-banners__box-frontend, .web-banners__box-manage, .web-banners__box-app, .web-banners__box-etc {
+  .web-banners__box-backend,
+  .web-banners__box-frontend,
+  .web-banners__box-manage,
+  .web-banners__box-app,
+  .web-banners__box-etc {
     padding: 82px 0px 82px;
     height: 502px;
     margin-top: -80px;
@@ -259,11 +291,12 @@ ul.activity__list, ul.type-of-talent__list {
     height: 190px;
     width: 76.77%;
     border-radius: 9px;
-    margin: 53px 10.61% 0px;
+    margin: 53px auto 0px;
     padding: 45px 4.11% 45px;
   }
 
-  .join__content ,.join__button {
+  .join__content,
+  .join__button {
     font-size: 25px;
   }
 
@@ -273,40 +306,51 @@ ul.activity__list, ul.type-of-talent__list {
     font-size: 20px;
     margin: 25px 0 90px;
   }
-
-
 }
 
 /* 모바일 가로 (해상도 480px ~ 767px)*/
 @media all and (min-width: 480px) and (max-width: 767px) {
-  section.web-banners, section.field, section.activity {
-    padding-bottom:30px;
+  section.web-banners,
+  section.field,
+  section.activity {
+    padding-bottom: 30px;
   }
 
-  .activity__title, .type-of-talent__title, .field__title {
+  .activity__title,
+  .type-of-talent__title,
+  .field__title {
     padding-left: 8.61%;
   }
 
-  .activity__title h1, .type-of-talent__title h1, .field__title h1 {
+  .activity__title h1,
+  .type-of-talent__title h1,
+  .field__title h1 {
     font-size: 25px;
   }
 
-  .activity__title h1, .type-of-talent__title h1 {
+  .activity__title h1,
+  .type-of-talent__title h1 {
     line-height: 1.5;
   }
 
-  ul.activity__list, ul.type-of-talent__list {
+  ul.activity__list,
+  ul.type-of-talent__list {
     font-size: 18px;
     padding-top: 25px;
     padding-left: 10.61%;
     padding-right: 10.61%;
   }
 
-  ul.activity__list li, ul.type-of-talent__list li {
+  ul.activity__list li,
+  ul.type-of-talent__list li {
     padding-bottom: 12px;
   }
 
-  .web-banners__box-backend, .web-banners__box-frontend, .web-banners__box-manage, .web-banners__box-app, .web-banners__box-etc {
+  .web-banners__box-backend,
+  .web-banners__box-frontend,
+  .web-banners__box-manage,
+  .web-banners__box-app,
+  .web-banners__box-etc {
     padding: 82px 0px 82px;
     height: 402px;
     margin-top: -80px;
@@ -353,11 +397,12 @@ ul.activity__list, ul.type-of-talent__list {
     height: 190px;
     width: 76.77%;
     border-radius: 9px;
-    margin: 53px 8.61% 0px;
+    margin: 53px auto 0px;
     padding: 45px 4.11% 45px;
   }
 
-  .join__content ,.join__button {
+  .join__content,
+  .join__button {
     font-size: 20px;
   }
 
@@ -367,42 +412,52 @@ ul.activity__list, ul.type-of-talent__list {
     font-size: 20px;
     margin: 25px 0 90px;
   }
-
 }
-
 
 /* 모바일 세로 (해상도 ~ 479px)*/
 @media all and (max-width: 479px) {
-
-  section.web-banners, section.field, section.activity {
+  section.web-banners,
+  section.field,
+  section.activity {
     padding-bottom: 70px;
   }
 
-  .activity__title, .type-of-talent__title, .field__title {
-  padding-left: 48px;
-  padding-right: 48px;
-}
+  .activity__title,
+  .type-of-talent__title,
+  .field__title {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
 
-  .activity__title h1, .type-of-talent__title h1, .field__title h1 {
+  .activity__title h1,
+  .type-of-talent__title h1,
+  .field__title h1 {
     font-size: 25px;
   }
 
-  .activity__title h1, .type-of-talent__title h1 {
+  .activity__title h1,
+  .type-of-talent__title h1 {
     line-height: 1.5;
   }
 
-  ul.activity__list, ul.type-of-talent__list {
+  ul.activity__list,
+  ul.type-of-talent__list {
     font-size: 15px;
     padding-top: 40px;
     padding-left: 66px;
     padding-right: 66px;
   }
 
-  ul.activity__list li, ul.type-of-talent__list li {
+  ul.activity__list li,
+  ul.type-of-talent__list li {
     padding-bottom: 33px;
   }
 
-  .web-banners__box-backend, .web-banners__box-frontend, .web-banners__box-manage, .web-banners__box-app, .web-banners__box-etc {
+  .web-banners__box-backend,
+  .web-banners__box-frontend,
+  .web-banners__box-manage,
+  .web-banners__box-app,
+  .web-banners__box-etc {
     padding: 80px 0px 80px;
     height: 459px;
     margin-top: -40px;
@@ -450,14 +505,15 @@ ul.activity__list, ul.type-of-talent__list {
   /* join */
   .join__box {
     height: 220px;
-    width: calc(600/750*100%);
+    width: calc(600 / 750 * 100%);
     border-radius: 9px;
-    margin: 67px 48px 0px;
+    margin: 67px auto 0px;
     padding: 45px 8.11% 45px;
     font-weight: none;
   }
 
-  .join__content ,.join__button {
+  .join__content,
+  .join__button {
     font-size: 20px;
   }
 
@@ -467,5 +523,4 @@ ul.activity__list, ul.type-of-talent__list {
     font-size: 20px;
     margin: 23px 0 60px;
   }
-
 }
