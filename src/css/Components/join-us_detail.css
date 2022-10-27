@@ -65,15 +65,6 @@ ul.activity__list, ul.type-of-talent__list {
   color: #FF4600;
 }
 
-/* skill
-.skill__icon {
-  margin: 4.53% 16.14% 4.89%;
-}
-
-.skill__icon-img {
-  margin: 0 1.09% 1.09% 0;
-} */
-
 /* join */
 .join__box {
   background-color: var(--black);
@@ -186,6 +177,101 @@ ul.activity__list, ul.type-of-talent__list {
     border-radius: 10px;
     font-size: 30px;
     margin: 38px 0 90px;
+  }
+
+
+}
+
+
+/* 테블릿 세로, 테블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  section.web-banners, section.field, section.activity {
+    padding-bottom: 50px;
+  }
+
+  .activity__title, .type-of-talent__title, .field__title {
+    padding-left: 10.61%;
+  }
+
+  .activity__title h1, .type-of-talent__title h1, .field__title h1 {
+    font-size: 30px;
+  }
+
+  .activity__title h1, .type-of-talent__title h1 {
+    line-height: 1.5;
+  }
+
+  ul.activity__list, ul.type-of-talent__list {
+    font-size: 22px;
+    padding-top: 45px;
+    padding-left: 10.61%;
+    padding-right: 10.61%;
+  }
+
+  ul.activity__list li, ul.type-of-talent__list li {
+    padding-bottom: 15px;
+  }
+
+  .web-banners__box-backend, .web-banners__box-frontend, .web-banners__box-manage, .web-banners__box-app, .web-banners__box-etc {
+    padding: 82px 0px 82px;
+    height: 502px;
+    margin-top: -80px;
+  }
+
+  .web-banners__button {
+    margin: 0px 0px 45px 10.61%;
+  }
+
+  .web-banners__button button {
+    width: 69px;
+    height: 42px;
+    font-size: 20px;
+  }
+
+  .web-banners__content {
+    font-size: 23px;
+    margin-left: 10.61%;
+    margin-right: 10.61%;
+  }
+
+  .web-banners__content p.title {
+    font-weight: 600;
+    font-size: 50px;
+    margin-top: 16px;
+  }
+
+  .web-banners__content p.sub-title {
+    font-size: 23px;
+    margin-top: 15px;
+  }
+
+  /* skill */
+  .skill__icon {
+    margin: 4.53% 10.71% 4.89%;
+  }
+
+  .skill__icon-img {
+    margin: 0 1.09% 1.09% 0;
+  }
+
+  /* join */
+  .join__box {
+    height: 190px;
+    width: 76.77%;
+    border-radius: 9px;
+    margin: 53px 10.61% 0px;
+    padding: 45px 4.11% 45px;
+  }
+
+  .join__content ,.join__button {
+    font-size: 25px;
+  }
+
+  .join__button button {
+    padding: 10px 44px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 25px 0 90px;
   }
 
 
