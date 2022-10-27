@@ -191,6 +191,10 @@ ul.activity__list, ul.type-of-talent__list {
 /* 모바일 세로 (해상도 ~ 479px)*/
 @media all and (max-width: 479px) {
 
+  .main {
+    padding: 40px 0 !important;
+  }
+
   section.web-banners, section.field, section.activity {
     padding-bottom: 70px;
   }
@@ -201,7 +205,7 @@ ul.activity__list, ul.type-of-talent__list {
 }
 
   .activity__title h1, .type-of-talent__title h1, .field__title h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .activity__title h1, .type-of-talent__title h1 {
@@ -209,7 +213,7 @@ ul.activity__list, ul.type-of-talent__list {
   }
 
   ul.activity__list, ul.type-of-talent__list {
-    font-size: 20px;
+    font-size: 15px;
     padding-top: 40px;
     padding-left: 66px;
     padding-right: 66px;
@@ -236,21 +240,21 @@ ul.activity__list, ul.type-of-talent__list {
   }
 
   .web-banners__content {
-    font-size: 20px;
+    font-size: 16px;
     margin-left: 48px;
     margin-right: 48px;
   }
 
   .web-banners__content p.title {
     font-weight: 600;
-    font-size: 45px;
+    font-size: 38px;
     margin-top: 14px;
     margin-right: 48px;
   }
 
   .web-banners__content p.sub-title {
-    font-size: 20px;
-    margin-top: 6px;
+    font-size: 16px;
+    margin-top: 10px;
   }
 
   /* skill */
