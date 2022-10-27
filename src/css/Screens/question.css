@@ -30,8 +30,6 @@ ul.list {
   color: var(--black);
   box-sizing: border-box;
   vertical-align: middle;
-  z-index: 1;
-  position: relative;
 }
 
 span.kakao__icon {
