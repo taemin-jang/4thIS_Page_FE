@@ -409,11 +409,6 @@
   padding: 72px 0px 0px 249px;
 }
 
-.apply-way__text {
-  width: 785px;
-  height: 177px;
-}
-
 .apply-way__text--p {
   font-size: 20px;
   font-weight: 700;
@@ -552,7 +547,8 @@
     width: 304px;
     height: 15px;
     margin: auto;
-    background-image: url("../../assets/images/joinUs/mobile-schedule.png");
+    background-image: url("../../assets/images/joinUs/calender\ image.png");
+    background-size: contain;
   }
 
   .schedule__text_1--p {
@@ -604,6 +600,7 @@
     text-align: center;
     color: #fff;
     float: left;
+    white-space: nowrap;
   }
 
   .target__box {
@@ -629,10 +626,12 @@
 
   .target__text {
     margin-top: 34px;
+    width: 100%;
+    height: 248px;
   }
 
   .target-text-box {
-    width: 327px;
+    width: 350px;
     height: 76px;
     border-radius: 5px;
     background-color: #fff;
@@ -658,5 +657,196 @@
     color: #000;
     margin: 5px 0px 0px 10px;
     line-height: 11px;
+  }
+
+  .field__box {
+    width: 350px;
+    height: 487px;
+    margin: auto;
+    padding-top: 62px;
+  }
+
+  .field__content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .field__title--p {
+    font-size: 26px;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: underline;
+    text-underline-position: under;
+    padding-bottom: 34px;
+  }
+
+  .field-content-box {
+    width: 100%;
+    height: 74px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    background-color: #000;
+    padding: 15px 0px 0px 9px;
+  }
+
+  .field__number {
+    width: 46px;
+    height: 53px;
+    float: left;
+    margin-right: 8px;
+  }
+
+  .field__number--p {
+    font-size: 40px;
+    font-weight: 800;
+    color: #e5e5e5;
+  }
+
+  .field__name {
+    height: 20px;
+    margin: 8px 0px 0px 63px;
+  }
+
+  .field__name--p {
+    font-size: 15px;
+    font-weight: 800;
+    color: #e5e5e5;
+  }
+
+  .field__text {
+    width: 180px;
+    height: 14px;
+  }
+
+  .fiels__text--p-1 {
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 63px;
+  }
+
+  .fiels__text--p-2 {
+    display: none;
+  }
+
+  .field__tag {
+    display: none;
+  }
+
+  .field-more__text--p {
+    font-size: 10px;
+    font-weight: 700;
+    color: #e5e5e5;
+    margin: 0px 10px 40px 0px;
+    text-align: right;
+    cursor: pointer;
+  }
+
+  .apply-way__box {
+    width: 350px;
+    height: 351px;
+    margin: auto;
+    margin-top: 0px;
+    padding-top: 117px;
+  }
+
+  .apply-way__content {
+    width: 100%;
+    height: 289px;
+  }
+
+  .apply-way__title--p {
+    font-size: 26px;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: underline;
+    text-underline-position: under;
+    padding-bottom: 34px;
+  }
+
+  .apply-way-box {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+    background-color: #000;
+    padding: 34px 0px 0px 0px;
+  }
+
+  .apply-way__text {
+    width: 261px;
+    height: 152px;
+    margin: auto;
+  }
+
+  .apply-way__text--p {
+    width: 231px;
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 17px;
+    float: left;
+    line-height: 15px;
+  }
+
+  .apply-circle {
+    width: 10px;
+    height: 10px;
+    background-image: url("../../assets/images/joinUs/apply-way-icon.png");
+    background-size: cover;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .banner-bottom-box {
+    width: 100%;
+    height: 142px;
+    background-color: #bebfff;
+    background-image: url("../../assets/images/joinUs/banner-background.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 170px;
+  }
+
+  .banner-bottom-content {
+    width: 1820px;
+    margin: 40px 0px 0px 48px;
+    padding: 40px 0px 0px 0px;
+  }
+
+  .banner-bottom-text-1 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  .banner-bottom-text-2 {
+    display: none;
+  }
+
+  .banner-bottom-text-3 {
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 13px;
+  }
+
+  .banner__support--button {
+    font-size: 10px;
+    font-weight: 700;
+    width: 110px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #fff;
+    border-style: none;
+    cursor: pointer;
+  }
+
+  .space {
+    width: 100px;
+    height: 80px;
+  }
+
+  .main {
+    padding: 0px 0 !important;
   }
 }
