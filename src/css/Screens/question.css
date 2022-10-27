@@ -1,21 +1,7 @@
 /* Question*/
 
-section.QnA {
-  padding-bottom: 146px;
-}
-
-.qna__title,
-.contact__title {
-  text-align: center;
-  /* padding-top: 104px; */
-  display: flex;
-  padding-left: 16.61%;
-  padding-right: 16.61%;
-}
-
 .qna__title h1,
 .contact__title h1 {
-  font-size: 50px;
   color: var(--text--hover-light-gray);
   border-bottom: 3px solid var(--text--hover-light-gray);
   line-height: 1.5;
@@ -23,10 +9,6 @@ section.QnA {
 
 .qna__subTitle,
 .contact__subTitle {
-  font-size: 19px;
-  padding-top: 15px;
-  padding-left: 16.61%;
-  padding-right: 16.61%;
   color: var(--text--hover-light-gray);
   line-height: 1.5;
 }
@@ -37,9 +19,6 @@ ul.list {
 .accordion-box {
   width: 100%;
   max-width: 70%;
-  margin-left: 16.61%;
-  margin-right: 16.61%;
-  padding-top: 42px;
   cursor: pointer;
 }
 
@@ -47,66 +26,259 @@ ul.list {
 .kakao {
   width: 100%;
   height: 100%;
-  line-height: 60px;
-  font-size: 20px;
   background-color: var(--white);
   color: var(--black);
   box-sizing: border-box;
-  margin-top: 33px;
-  padding: 0 10px;
-  border-radius: 20px;
   vertical-align: middle;
-  padding: 23px;
   z-index: 1;
   position: relative;
 }
 
-span.question__qna-icon,
-span.kakao__icon {
-  margin-left: 49px;
-  font-size: 30px;
-}
-
 span.kakao__icon {
   background: url("/src/assets/images/question/kakao-icon.png") 0 0 no-repeat;
-  background-size: 30px;
   background-position-y: bottom;
-}
-
-span.question__text,
-span.kakao__text {
-  font-size: 20px;
-  padding: 23px;
 }
 
 .question__hover-icon {
   position: absolute;
-  top: 45%;
-  right: 35px;
 }
 
 .con {
-  width: 100%;
-  padding: 49px;
   display: none;
   background-color: var(--white);
   color: var(--black);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  margin-top: -20px;
 }
 
 p.con__text {
   background-color: var(--light-black);
   color: var(--white);
-  padding-left: 129px;
-  padding-right: 129px;
-  padding-top: 39px;
-  padding-bottom: 39px;
   line-height: 1.5;
-  font-size: 20px;
 }
 
-.empty {
-  padding-top: 180px;
+/* media query */
+@media all and (min-width: 1024px) {
+  section.QnA {
+    padding-bottom: 146px;
+  }
+
+  .qna__title, .contact__title {
+  text-align: center;
+  display: flex;
+  padding-left: 16.61%;
+  padding-right: 16.61%;
+  }
+
+  .qna__title h1, .contact__title h1 {
+  font-size: 50px;
+  }
+
+  .qna__subTitle, .contact__subTitle {
+  font-size: 19px;
+  padding-top: 15px;
+  padding-left: 16.61%;
+  padding-right: 16.61%;
+  }
+
+  .accordion-box {
+    width: 100%;
+    max-width: 70%;
+    margin-left: 16.61%;
+    margin-right: 16.61%;
+    padding-top: 42px;
+    cursor: pointer;
+  }
+
+  .question, .kakao {
+  line-height: 60px;
+  font-size: 20px;
+  margin-top: 33px;
+  padding: 0 10px;
+  padding: 23px;
+  border-radius: 20px;
+  }
+
+  span.question__qna-icon, span.kakao__icon {
+  margin-left: 49px;
+  font-size: 30px;
+  }
+
+  span.kakao__icon {
+    background-size: 30px;
+  }
+
+  span.question__text, span.kakao__text {
+  font-size: 20px;
+  padding: 23px;
+  }
+
+  .con {
+    width: 100%;
+    padding: 49px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -20px;
+  }
+
+  p.con__text {
+    padding-left: 129px;
+    padding-right: 129px;
+    padding-top: 39px;
+    padding-bottom: 39px;
+    font-size: 20px;
+  }
+
+  .empty {
+    padding-top: 180px;
+  }
+}
+
+/* 테블릿 세로, 테블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  section.QnA {
+    padding-bottom: 8.20%;
+  }
+
+  .qna__title, .contact__title {
+    text-align: center;
+    display: flex;
+    padding-left: 16.61%;
+    padding-right: 16.61%;
+  }
+  
+  .qna__title h1, .contact__title h1 {
+    font-size: 30px;
+  }
+
+  .qna__subTitle, .contact__subTitle {
+    font-size: 19px;
+    padding-top: 15px;
+    padding-left: 16.61%;
+    padding-right: 16.61%;
+  }
+
+  .accordion-box {
+    width: 100%;
+    max-width: 70%;
+    margin-left: 16.61%;
+    margin-right: 16.61%;
+    padding-top: 15px;
+    cursor: pointer;
+  }
+
+  .question, .kakao {
+    line-height: 60px;
+    font-size: 15px;
+    margin-top: 33px;
+    padding: 0 10px;
+    padding: 5px;
+    border-radius: 10px;
+    }
+
+    span.question__qna-icon, span.kakao__icon {
+      margin-left: 49px;
+      font-size: 30px;
+      margin-right: 20px;
+    }
+
+    span.kakao__icon {
+      background-size: contain;
+    }
+
+    span.question__text, span.kakao__text {
+      font-size: 15px;
+    }
+
+    .con {
+      width: 100%;
+      padding: 25px 50px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      margin-top: -10px;
+    }
+    
+    p.con__text {
+      padding-left: 65px;
+      padding-right: 65px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      font-size: 15px;
+    }
+}
+
+/* 모바일 가로 (해상도 480px ~ 767px)*/
+@media all and (min-width: 480px) and (max-width: 767px) {
+  section.QnA {
+    padding-bottom: 8.20%;
+  }
+
+  .qna__title, .contact__title {
+    text-align: center;
+    display: flex;
+    padding-left: 16.61%;
+    padding-right: 16.61%;
+  }
+
+  .qna__title h1, .contact__title h1 {
+    font-size: 20px;
+  }
+
+  .qna__subTitle, .contact__subTitle {
+    font-size: 14px;
+    padding-top: 15px;
+    padding-left: 16.61%;
+    padding-right: 16.61%;
+  }
+
+  .accordion-box {
+    width: 100%;
+    max-width: 70%;
+    margin-left: 16.61%;
+    margin-right: 16.61%;
+    padding-top: 12px;
+    cursor: pointer;
+  }
+
+  .question, .kakao {
+    line-height: 60px;
+    font-size: 12px;
+    margin-top: 33px;
+    padding: 0 10px;
+    padding: 5px;
+    border-radius: 10px;
+    }
+
+    span.question__qna-icon, span.kakao__icon {
+      margin-left: 25px;
+      font-size: 21px;
+      margin-right: 16px;
+    }
+
+    span.kakao__icon {
+      background-size: contain;
+    }
+
+    span.question__text, span.kakao__text {
+      font-size: 12px;
+    }
+
+    .con {
+      width: 100%;
+      padding: 25px 50px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      margin-top: -10px;
+    }
+
+    p.con__text {
+      padding-left: 65px;
+      padding-right: 65px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      font-size: 12px;
+    }
+
+}
+
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media all and (max-width: 479px) {
 }
