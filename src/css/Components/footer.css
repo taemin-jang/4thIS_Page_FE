@@ -27,3 +27,48 @@
   font-size: 20px;
   font-weight: normal;
 }
+
+/* 테블릿 세로, 테블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  /* header */
+  .footer-container {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/* 모바일 가로 (해상도 480px ~ 767px)*/
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .footer-container {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 20px;
+  }
+
+  .footer h1 {
+    font-size: 20px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+}
+
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media all and (max-width: 479px) {
+  .footer-container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 10px;
+    vertical-align: center;
+  }
+
+  .footer h1 {
+    font-size: 16px;
+  }
+
+  .footer p {
+    font-size: 11px;
+  }
+}
