@@ -419,6 +419,124 @@ img {
 }
 
 @media all and (min-width: 768px) and (max-width: 1023px) {
+  .main_p {
+    padding: 24px;
+  }
+
+  .section.Prj {
+    padding-bottom: 80px;
+  }
+
+  .prj__title {
+    font-size: 26px;
+  }
+
+  .prj1__title {
+    flex-direction: column;
+  }
+  .test {
+    padding-top: 33px;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .prj__subTitle {
+    margin-bottom: 21px;
+    font-size: 12px;
+    padding-top: 0px;
+  }
+
+  .slider {
+    width: 1090px;
+    height: 248px;
+    margin: 12px auto;
+  }
+
+  .slider .slick-slide {
+    margin: 20px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    display: none;
+  }
+
+  .prj1__title h1 {
+    font-size: 26px;
+    text-align: left;
+    margin-top: -8px;
+  }
+
+  .wrapper {
+    display: grid;
+    margin-top: 39px;
+    grid-template-columns: 220px 220px 220px;
+    grid-template-rows: 250px;
+    column-gap: 30px;
+    justify-content: space-around;
+  }
+
+  .grid {
+    display: grid;
+    column-gap: 14px;
+    row-gap: 14px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    grid-template-columns: 157px 157px 157px 157px;
+    grid-template-rows: 157px 157px 157px 157px;
+    column-gap: 30px; /* 컬럼 간격 */
+    /* grid-template-columns: repeat(auto-fill, minmax(290px,3fr));                  /* 반응형 */
+    /* grid-gap: 35px;        /* 그리드 사이 간격 (가로) */
+    justify-content: space-around;
+  }
+
+  .prj1__title {
+    flex-direction: column;
+  }
+
+  .prj1__subTitle {
+    margin-bottom: 21px;
+    font-size: 12px;
+    padding-top: 0px;
+  }
+
+  .comp_text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .comp_text2 {
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    line-height: 23px;
+    font-weight: bold;
+    padding-top: 9px;
+  }
+
+  .comp_text3 {
+    font-size: 12px;
+    line-height: 23px;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+    padding-top: 9px;
+  }
+
+  .textBox {
+    width: 80px;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 15px;
+  }
 }
 
 /* 테블릿 세로, 테블릿 가로 (해상도 768px ~ 1023px)*/
