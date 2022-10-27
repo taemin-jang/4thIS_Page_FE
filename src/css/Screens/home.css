@@ -487,13 +487,20 @@
   justify-content: space-evenly;
 }
 
+.member__button button.active {
+  border-bottom: 5px solid #6768ab;
+  border-radius: 5px;
+  padding-bottom: 3px;
+  color: #6768ab;
+}
+
 .member__card-column--div {
   display: none;
 }
 
 .member__card-column--div.active {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin: 0px auto;
   width: 67.26%;
@@ -505,7 +512,12 @@
   border-radius: 10px;
   background-color: var(--white);
   margin-top: 35px;
+  margin-right: 23px;
 }
+
+/* .member__card:nth-child(3) {
+  margin-right: 0px;
+} */
 
 .member__card--image img {
   width: 386px;

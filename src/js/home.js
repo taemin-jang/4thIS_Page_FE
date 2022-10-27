@@ -185,11 +185,24 @@ function changefront(i) {
   let memberElCol = document.querySelectorAll(".member__card-column--div");
 
   memberElCol[i].classList.add("active");
-  memberElCol[j].classList.remove("active");
+  memberEl[i].classList.add("active");
+  memberEl[i].style.color = "#6768ab";
+  memberEl[i].style.borderBottom = "5px solid #6768ab";
+  memberEl[i].style.paddingBottom = "3px";
+  memberEl[i].style.borderRadius = "5px";
+
+  if (j !== i) {
+    memberElCol[j].classList.remove("active");
+    memberEl[j].style.color = "#ffffff";
+    memberEl[j].style.borderBottom = "0px solid #6768ab";
+  }
+
   j = i;
 
   console.log(memberEl, memberElCol);
 }
+memberEl.addEventListener("click", changefront);
+
 /* 
 document.querySelector(".클래스 #아이디 div")
 let changeEl = document.querySelectorAll()
