@@ -598,6 +598,7 @@
   color: var(--white);
   padding: 18px;
   cursor: pointer;
+  border: none;
 }
 
 /* media query */
