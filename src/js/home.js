@@ -101,6 +101,7 @@ let interval = setInterval(() => {
 function slide(cnt) {
   // 이동시킬 html 요소 선택
   let bodyEl = document.querySelector("body").getBoundingClientRect().width;
+  let boEl = document.querySelector("body").getBoundingClientRect().height;
   let slideEl = document.querySelector(".about__gallery");
   let bulletEl = document.querySelectorAll(".about__bullet-dot");
   let galleryEl = document.querySelectorAll(".about__gallery--image");
@@ -108,7 +109,8 @@ function slide(cnt) {
   // -633px씩 이동
   // slideEl.style.transform = `translate3d(${-11.08 * cnt}%, 0px, 0px)`;
   // slideEl.style.width = `${galleryEl.length * 100}%`;
-  console.log(bodyEl, (3170 / bodyEl) * 100);
+  // console.log(bodyEl, (3170 / bodyEl) * 100);
+  // console.log("boEl : ", boEl);
 
   if (bodyEl >= 1903) {
     slideEl.style.width = `${(3170 / bodyEl) * 100}%`;
@@ -119,7 +121,6 @@ function slide(cnt) {
   } else if (bodyEl < 1024) {
     slideEl.style.width = `${galleryEl.length * 100}%`;
     slideEl.style.transform = `translate3d(${-bodyEl * cnt}px, 0px, 0px)`;
-    console.log(-bodyEl * cnt, "hi");
   }
 
   /**
@@ -160,17 +161,17 @@ function slide(cnt) {
 
   // pagination 클릭 시 해당 위치로 이동
   bulletEl[0].addEventListener("click", () => {
-    slideEl.style.transform = "translate(0px)";
+    // slideEl.style.transform = "translate(0px)";
     cnt = 1;
     pagination(cnt);
   });
   bulletEl[1].addEventListener("click", () => {
-    slideEl.style.transform = "translate(-1899px)";
+    // slideEl.style.transform = "translate(-1899px)";
     cnt = 4;
     pagination(cnt);
   });
   bulletEl[2].addEventListener("click", () => {
-    slideEl.style.transform = "translate(-3798px)";
+    // slideEl.style.transform = "translate(-3798px)";
     cnt = 6;
     pagination(cnt);
   });
@@ -257,9 +258,9 @@ function changefront(i) {
 
   j = i;
 
-  console.log(memberEl, memberElCol);
+  // console.log(memberEl, memberElCol);
 }
-memberEl.addEventListener("click", changefront);
+// memberEl.addEventListener("click", changefront);
 
 /* 
 document.querySelector(".클래스 #아이디 div")

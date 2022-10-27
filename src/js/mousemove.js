@@ -13,10 +13,20 @@ document.addEventListener("mousemove", (e) => {
     e.clientY < e.pageY ? e.clientY + (e.pageY - e.clientY) : e.clientY;
 
   circle.style.left = mouseX + "px";
+  if (
+    e.pageY >
+    document.querySelector("body").getBoundingClientRect().height - 270
+  ) {
+    circle.style.top =
+      document.querySelector("body").getBoundingClientRect().height -
+      270 +
+      "px";
+  } else {
+    circle.style.top = mouseY + "px";
+  }
 
-  circle.style.top = mouseY + "px";
   // console.log(e);
   // console.log(e.pageX, e.pageY);
 
-  // console.log(e.screenX, e.screenY);
+  // console.log(mouseY);
 });
