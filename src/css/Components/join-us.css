@@ -489,7 +489,7 @@
   .banner__box {
     width: 375px;
     height: 221px;
-    margin: 100px 0 38px;
+    margin: auto;
     padding: 30px 0px 73px 24px;
     background-color: #fff;
   }
@@ -844,9 +844,5 @@
   .space {
     width: 100px;
     height: 80px;
-  }
-
-  .main {
-    padding: 0px 0 !important;
   }
 }
