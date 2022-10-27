@@ -486,25 +486,177 @@
 
 /* 모바일 세로 (해상도 ~ 479px)*/
 @media all and (max-width: 479px) {
+  .banner {
+    width: 100%;
+    height: 221px;
+  }
+
   .banner__box {
     width: 375px;
     height: 221px;
     margin: 100px 0 38px;
-    padding: 30px 70px 73px 24px;
-    opacity: 0.97;
+    padding: 30px 0px 73px 24px;
     background-color: #fff;
   }
 
   .banner__title--p {
-    width: 275px;
-    height: 33px;
     font-size: 25px;
     font-weight: 700;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: left;
     color: #000;
+  }
+
+  .banner__text--p {
+    margin: 18px 0 17px;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 14px;
+    color: #000;
+    padding-bottom: 17px;
+  }
+
+  .banner__button--button {
+    margin: auto;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+    color: #6768ab;
+    text-decoration: underline;
+    text-underline-position: under;
+  }
+
+  .schedule__box {
+    width: 350px;
+    height: 157px;
+    margin: auto;
+    padding-top: 38px;
+  }
+
+  .schedule__content {
+    width: 100%;
+    height: 119px;
+  }
+
+  .schedule__title--p {
+    font-size: 26px;
+    font-weight: 800;
+    text-align: left;
+    color: #e5e5e5;
+    text-decoration: underline;
+    text-underline-position: under;
+    padding-bottom: 42px;
+  }
+
+  .schedule__img {
+    width: 304px;
+    height: 15px;
+    margin: auto;
+    background-image: url("../../assets/images/joinUs/mobile-schedule.png");
+  }
+
+  .schedule__text_1--p {
+    width: 46px;
+    height: 22px;
+    margin: 17px 21px 61px 10px;
+    font-size: 7px;
+    line-height: 11px;
+    text-align: center;
+    color: #bebfff;
+  }
+
+  .schedule__text_2--p {
+    width: 46px;
+    height: 22px;
+    margin: 17px 0px 61px 10px;
+    font-size: 7px;
+    line-height: 11px;
+    text-align: center;
+    color: #fff;
+    float: left;
+  }
+
+  .schedule__text_3--p {
+    width: 40px;
+    margin: 17px 0px 61px 20px;
+    font-size: 7px;
+    line-height: 11px;
+    text-align: center;
+    color: #fff;
+    float: left;
+  }
+
+  .schedule__text_4--p {
+    width: 65px;
+    margin: 17px 0px 61px 20px;
+    font-size: 7px;
+    line-height: 11px;
+    text-align: center;
+    color: #fff;
+    float: left;
+  }
+
+  .schedule__text_5--p {
+    width: 47px;
+    margin: 17px 0px 61px 10px;
+    font-size: 7px;
+    line-height: 11px;
+    text-align: center;
+    color: #fff;
+    float: left;
+  }
+
+  .target__box {
+    width: 350px;
+    height: 100%;
+    margin: auto;
+    padding-top: 61px;
+  }
+
+  .target__content {
+    width: 100%;
+    height: 100%;
+    margin-top: 34px;
+  }
+
+  .target__title--p {
+    font-size: 26px;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: underline;
+    text-underline-position: under;
+  }
+
+  .target__text {
+    margin-top: 34px;
+  }
+
+  .target-text-box {
+    width: 327px;
+    height: 76px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 10px;
+    float: left;
+  }
+
+  .target-text-box-purple {
+    background-color: #7576b3;
+  }
+
+  .target__name--p {
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    margin: 11px 0px 0px 10px;
+    text-decoration: underline;
+    text-underline-position: under;
+  }
+
+  .target__text--p {
+    font-size: 10px;
+    color: #000;
+    margin: 5px 0px 0px 10px;
+    line-height: 11px;
   }
 }
