@@ -20,7 +20,7 @@
 .header__menu-hamburgur {
   position: relative;
   align-items: center;
-  right: 50px;
+  /* right: 50px; */
   -webkit-user-select: none;
   user-select: none;
 }
@@ -164,14 +164,9 @@
 
 /* 테블릿 세로, 테블릿 가로 (해상도 768px ~ 1023px)*/
 @media all and (min-width: 768px) and (max-width: 1023px) {
-  /* header */
-  .header {
-    height: 120px;
-  }
-
   .header-container {
     width: 100%;
-    padding-left: 50px;
+    padding: 0 24px;
   }
 
   .header__menu-hamburgur .header__menu--list {
@@ -193,13 +188,9 @@
 
 /* 모바일 가로 (해상도 480px ~ 767px)*/
 @media all and (min-width: 480px) and (max-width: 767px) {
-  .header {
-    height: 120px;
-  }
-
   .header-container {
     width: 100%;
-    padding-left: 50px;
+    padding: 0 24px;
   }
 
   .header__menu-list-logo h1 {
@@ -243,7 +234,7 @@
 
   .header-container {
     width: 100%;
-    padding-left: 40px;
+    padding: 0 24px;
   }
 
   .header__menu-list-logo h1 {
