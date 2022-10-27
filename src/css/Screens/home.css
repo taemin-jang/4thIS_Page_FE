@@ -487,7 +487,11 @@
   justify-content: space-evenly;
 }
 
-.member__card-column {
+.member__card-column--div {
+  display: none;
+}
+
+.member__card-column--div.active {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -503,7 +507,7 @@
   margin-top: 35px;
 }
 
-.member__card--image {
+.member__card--image img {
   width: 386px;
   height: 344px;
   border-radius: 10px;
@@ -1211,7 +1215,6 @@
     height: 260px;
     margin: 6px auto 0px;
   }
-
   .member__card--content {
     margin-left: 10px;
   }

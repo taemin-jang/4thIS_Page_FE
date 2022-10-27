@@ -501,16 +501,18 @@
 
           <div class="member__card--total">
             <div class="member__button">
-              <button>기획 / 디자인</button>
+              <button class="active" onclick="changefront(0)">
+                기획 / 디자인
+              </button>
               <span>|</span>
-              <button>프론트</button>
+              <button onclick="changefront(1)">프론트</button>
               <span>|</span>
-              <button>백엔드</button>
+              <button onclick="changefront(2)">백엔드</button>
               <span>|</span>
-              <button>앱</button>
+              <button onclick="changefront(3)">앱</button>
             </div>
             <div class="member__card-column">
-              <div class="member__card-column-design">
+              <div class="member__card-column--div active">
                 <div class="member__card">
                   <div class="member__card--image">
                     <img src="/src/assets/images/home/member/김은진.jpg" />
@@ -572,7 +574,7 @@
                   </div>
                 </div>
               </div>
-              <div class="member__card-column-front">
+              <div class="member__card-column--div">
                 <div class="member__card">
                   <div class="member__card--image">
                     <img src="/src/assets/images/home/member/장태민.png" />
@@ -649,7 +651,7 @@
                   </div>
                 </div>
               </div>
-              <div class="member__card-column-back">
+              <div class="member__card-column--div">
                 <div class="member__card">
                   <div class="member__card--image">
                     <img src="/src/assets/images/home/member/김민우.jpg" />
@@ -726,7 +728,7 @@
                   </div>
                 </div>
               </div>
-              <div class="member__card-column-app">
+              <div class="member__card-column--div">
                 <div class="member__card">
                   <div class="member__card--image">
                     <img src="/src/assets/images/home/member/유민상.png" />

@@ -176,3 +176,28 @@ function whatOver(i) {
     whatEl_white.classList.add("active");
   });
 }
+
+// member 부분
+let j = 0;
+
+function changefront(i) {
+  let memberEl = document.querySelectorAll(".member__button button");
+  let memberElCol = document.querySelectorAll(".member__card-column--div");
+
+  memberElCol[i].classList.add("active");
+  memberElCol[j].classList.remove("active");
+  j = i;
+
+  console.log(memberEl, memberElCol);
+}
+/* 
+document.querySelector(".클래스 #아이디 div")
+let changeEl = document.querySelectorAll()
+changeEl[2]
+
+console.log(changeEl);
+
+active 클래스를 주자
+기본으로 기획 / 디자인을 보여주자
+
+*/
