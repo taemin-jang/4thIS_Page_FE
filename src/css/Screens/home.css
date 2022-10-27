@@ -1030,7 +1030,7 @@
 
   .member__card--content {
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .member__card--skills {
@@ -1065,6 +1065,7 @@
 @media all and (max-width: 479px) {
   .main {
     padding: 40px 0;
+    margin: 0;
   }
 
   .circle {
