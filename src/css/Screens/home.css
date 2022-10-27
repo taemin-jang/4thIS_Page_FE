@@ -529,7 +529,7 @@
 }
 
 .member__card--content {
-  margin-left: 29px;
+  margin-left: 15px;
   margin-top: 11px;
   font-size: 20px;
   font-weight: 400;
@@ -542,8 +542,10 @@
 }
 
 .member__card--skills {
-  margin-left: 29px;
+  margin-left: 0px;
   margin-top: 25px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .member__card--skills span {
