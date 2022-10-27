@@ -20,17 +20,87 @@
   background-color: #fff;
   width: 808px;
   height: 813px;
-  padding: 15px;
-}
-
-.modalBox button {
-  display: block;
-  width: 80px;
-  margin: 0 auto;
+  padding-top: 157px;
 }
 
 .hidden {
   display: none;
+}
+
+.modal__content--div {
+  width: 542px;
+  height: 604px;
+  margin: auto;
+}
+
+.modal__title--h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.modal__date-box--div {
+  width: 322px;
+  height: 101px;
+  margin: auto;
+}
+
+.modal__date--p {
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+.modal__date--p strong {
+  font-weight: 700;
+}
+
+.modal__warning-box--div {
+  width: 530px;
+  height: 101px;
+  padding: 83px 0px 95px 0px;
+}
+
+.modal__warning--p {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.modal__button-box--div {
+  width: 542px;
+  height: 71px;
+}
+
+.closeBtn {
+  width: 251px;
+  height: 71px;
+  background-color: #e6e6e6;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.closeBtn-2 {
+  width: 251px;
+  height: 71px;
+  background-color: #e6e6e6;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.button__apply--button {
+  width: 251px;
+  height: 71px;
+  background-color: #7576b3;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  float: right;
 }
 
 .no__padding-top {
