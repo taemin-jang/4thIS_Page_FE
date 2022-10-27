@@ -481,6 +481,9 @@
 
 /* 모바일 세로 (해상도 ~ 479px)*/
 @media all and (max-width: 479px) {
+  .main {
+    margin: -40px 0px 0px 0px;
+  }
   .banner {
     width: 100%;
     height: 221px;
