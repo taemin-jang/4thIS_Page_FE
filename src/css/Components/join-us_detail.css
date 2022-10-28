@@ -68,7 +68,7 @@ ul.type-of-talent__list {
   color: var(--white);
 }
 .web-banners__content span.red {
-  color: #ff4600;
+  color: #cc2a00;
 }
 
 /* join */
@@ -135,7 +135,7 @@ ul.type-of-talent__list {
   .web-banners__box-etc {
     padding: 142px 0px 147px;
     height: 1002px;
-    margin-top: -232px;
+    margin-top: -252px;
   }
 
   .web-banners__button {
@@ -204,6 +204,10 @@ ul.type-of-talent__list {
 
 /* 테블릿 세로, 테블릿 가로 (해상도 768px ~ 1023px)*/
 @media all and (min-width: 768px) and (max-width: 1023px) {
+  .no-padding {
+    margin-top: -100px;
+  }
+
   section.web-banners,
   section.field,
   section.activity {
@@ -310,6 +314,10 @@ ul.type-of-talent__list {
 
 /* 모바일 가로 (해상도 480px ~ 767px)*/
 @media all and (min-width: 480px) and (max-width: 767px) {
+  .no-padding {
+    margin-top: -100px;
+  }
+
   section.web-banners,
   section.field,
   section.activity {
@@ -416,6 +424,11 @@ ul.type-of-talent__list {
 
 /* 모바일 세로 (해상도 ~ 479px)*/
 @media all and (max-width: 479px) {
+  .no-padding {
+    margin-top: -100px;
+    padding: 0px;
+  }
+
   section.web-banners,
   section.field,
   section.activity {

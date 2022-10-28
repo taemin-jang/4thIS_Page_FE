@@ -403,10 +403,14 @@
 
 .apply-way-box {
   width: 100%;
-  height: 327px;
+  /* height: 327px; */
   border-radius: 10px;
   background-color: #000;
-  padding: 72px 0px 0px 249px;
+  padding: 72px 0px 72px 249px;
+}
+
+.apply-way__text {
+  display: flex;
 }
 
 .apply-way__text--p {
@@ -414,6 +418,12 @@
   font-weight: 700;
   color: white;
   margin-bottom: 27px;
+  margin-left: 20px;
+}
+
+img.apply-circle {
+  width: 20px;
+  height: 20px;
 }
 
 .banner-bottom-box {
@@ -427,9 +437,9 @@
 }
 
 .banner-bottom-content {
-  width: 1820px;
-  margin: 0px 750px 0px 750px;
-  padding: 192px 0px 0px 157.5px;
+  width: 50%;
+  margin: 0 auto;
+  padding: 192px 0px 0px;
 }
 
 .banner-bottom-text-1 {
@@ -778,8 +788,8 @@
 
   .apply-way__text {
     width: 261px;
-    height: 152px;
     margin: auto;
+    display: flex;
   }
 
   .apply-way__text--p {
@@ -788,8 +798,9 @@
     font-weight: 700;
     color: white;
     margin-bottom: 17px;
-    float: left;
+    float: right;
     line-height: 15px;
+
   }
 
   .apply-circle {
@@ -801,6 +812,11 @@
     margin-right: 10px;
   }
 
+  img.apply-circle {
+    width: 10px;
+    height: 10px;
+  }
+
   .banner-bottom-box {
     width: 100%;
     height: 142px;
@@ -809,7 +825,7 @@
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-    margin-top: 170px;
+    margin-top: 140px;
   }
 
   .banner-bottom-content {

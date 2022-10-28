@@ -331,7 +331,7 @@ p.con__text {
   }
 
   span.question__text, span.kakao__text {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .con {
@@ -347,7 +347,8 @@ p.con__text {
     padding-right: 21px;
     padding-top: 23px;
     padding-bottom: 23px;
-    font-size: 10px;
+    font-size: 12px;
+    line-height: 18px;
   }
 
 }
