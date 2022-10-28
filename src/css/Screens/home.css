@@ -122,24 +122,6 @@
   /* background-color: white; */
 }
 
-/* .about__gallery--image.active {
-  width: 10.51%;
-  height: 44.2vh;
-  margin: 0 17px;
-  background-color: white;
-  display: block;
-} */
-
-.about__gallery--image div {
-  /* width: ; */
-  /* width: 100%;
-  height: 44.2vh;
-  background-color: var(--white);
-  background-color: yellow;
-
-  margin: auto; */
-}
-
 .about__bullet {
   display: flex;
   width: 4%;
