@@ -55,7 +55,6 @@ function countDown(month, day, hour, minute, second) {
     }
   }
 
-  console.log(num[2]);
   // 계산된 시간을 각 html 요소에 넣음
   let day_1 = (document.querySelector(
     ".count__timer--p-black:nth-child(1)"
