@@ -427,9 +427,9 @@
 }
 
 .banner-bottom-content {
-  width: 1820px;
-  margin: 0px 750px 0px 750px;
-  padding: 192px 0px 0px 157.5px;
+  width: 50%;
+  margin: 0 auto;
+  padding: 192px 0px 0px;
 }
 
 .banner-bottom-text-1 {
