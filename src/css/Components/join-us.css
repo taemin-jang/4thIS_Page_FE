@@ -409,11 +409,21 @@
   padding: 72px 0px 72px 249px;
 }
 
+.apply-way__text {
+  display: flex;
+}
+
 .apply-way__text--p {
   font-size: 20px;
   font-weight: 700;
   color: white;
   margin-bottom: 27px;
+  margin-left: 20px;
+}
+
+img.apply-circle {
+  width: 20px;
+  height: 20px;
 }
 
 .banner-bottom-box {
@@ -777,8 +787,8 @@
 
   .apply-way__text {
     width: 261px;
-    height: 152px;
     margin: auto;
+    display: flex;
   }
 
   .apply-way__text--p {
@@ -787,8 +797,9 @@
     font-weight: 700;
     color: white;
     margin-bottom: 17px;
-    float: left;
+    float: right;
     line-height: 15px;
+
   }
 
   .apply-circle {
@@ -798,6 +809,11 @@
     background-size: cover;
     float: left;
     margin-right: 10px;
+  }
+
+  img.apply-circle {
+    width: 10px;
+    height: 10px;
   }
 
   .banner-bottom-box {
