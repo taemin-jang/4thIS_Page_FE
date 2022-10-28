@@ -848,4 +848,29 @@
     width: 100px;
     height: 80px;
   }
+
+  .modalBox {
+    width: 100%;
+  }
+
+  .modal__content--div {
+    width: auto;
+  }
+
+  .modal__warning--p {
+    width: 100vw;
+  }
+
+  .modal__button-box--div {
+    width: 92vw;
+    margin: 0 auto;
+  }
+
+  .closeBtn {
+    width: 44vw;
+  }
+
+  .button__apply--button {
+    width: 44vw;
+  }
 }

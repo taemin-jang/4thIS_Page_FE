@@ -509,6 +509,7 @@ img {
   .comp_text {
     font-size: 12px;
     line-height: 20px;
+    padding-top: 20px;
   }
 
   .comp_text2 {
@@ -522,11 +523,11 @@ img {
 
   .comp_text3 {
     font-size: 12px;
-    line-height: 23px;
-    width: 100px;
+    line-height: 20px;
+    width: 150px;
     text-align: center;
     margin: auto;
-    padding-top: 9px;
+    padding-top: 20px;
   }
 
   .textBox {
@@ -567,7 +568,7 @@ img {
   .prj__subTitle {
     margin-bottom: 21px;
     font-size: 12px;
-    padding-top: 0px;
+    margin-top: -4px;
   }
 
   .slider {
@@ -631,21 +632,22 @@ img {
   .comp_text {
     font-size: 10px;
     line-height: 0px;
+    margin-top: -4px;
   }
 
   .comp_text2 {
     color: black;
     text-align: center;
     font-size: 10px;
-    line-height: 14px;
+    line-height: 12px;
     font-weight: bold;
     padding-top: 4px;
   }
 
   .comp_text3 {
     font-size: 10px;
-    line-height: 14px;
-    width: 80px;
+    line-height: 12px;
+    width: 70px;
     text-align: center;
     margin: auto;
     padding-top: 4px;
