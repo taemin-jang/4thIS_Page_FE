@@ -1,38 +1,30 @@
+// const open = () => {
+//   document.querySelector(".modal").classList.remove("hidden");
+// };
 
-const open = () => {
-  document.querySelector(".modal").classList.remove("hidden");
+// const close = (i) => {
+//   console.log(document.querySelectorAll(".modal")[i]);
+//   document.querySelectorAll(".modal")[i].classList.add("hidden");
+// };
+
+// document.querySelector(".openBtn").addEventListener("click", open);
+// document.querySelector(".closeBtn").addEventListener("click", close(0));
+// document.querySelector(".bg").addEventListener("click", close);
+
+// document.querySelector(".openBtn-2").addEventListener("click", open);
+// document.querySelector(".closeBtn-2").addEventListener("click", close);
+// document.querySelector(".bg").addEventListener("click", close);
+
+// document.querySelector(".closeBtn-notice").addEventListener("click", close(1));
+// document.querySelector(".bg").addEventListener("click", close);
+
+function openModal(i) {
+  document.querySelectorAll(".modal")[i].classList.remove("hidden");
 }
 
-const close = () => {
-  document.querySelector(".modal").classList.add("hidden");
+function closeModal(i) {
+  const modalEl = document.querySelectorAll(".modal");
+  const closeEl = document.querySelectorAll(".closeBtn");
+
+  modalEl[i].classList.add("hidden");
 }
-
-document.querySelector(".openBtn").addEventListener("click", open);
-document.querySelector(".closeBtn").addEventListener("click", close);
-document.querySelector(".bg").addEventListener("click", close);
-
-document.querySelector(".openBtn-2").addEventListener("click", open);
-document.querySelector(".closeBtn-2").addEventListener("click", close);
-document.querySelector(".bg").addEventListener("click", close);
-/**
- * mousemove이벤트를 이용해 움직인다.
-   마우스의 좌표는 clientX와 clientY를 이용해 알수 있다. -> 브라우저 window의 좌표값 위치를 전달한다.
-   pageX, pageY와는 다르다.
- */
-const circle = document.querySelector(".circle");
-
-document.addEventListener("mousemove", (e) => {
-  const mouseX = e.clientX;
-
-  // 만약 스크롤로 인해 해당 페이지를 넘어가면 pageY에서 뺀 값 만큼 더해준다.
-  const mouseY =
-    e.clientY < e.pageY ? e.clientY + (e.pageY - e.clientY) : e.clientY;
-
-  circle.style.left = mouseX + "px";
-
-  circle.style.top = mouseY + "px";
-  // console.log(e);
-  console.log(e.pageX, e.pageY);
-
-  console.log(e.screenX, e.screenY);
-});

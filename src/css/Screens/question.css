@@ -33,7 +33,7 @@ ul.list {
 }
 
 span.kakao__icon {
-  background: url("/src/assets/images/question/kakao-icon.png") 0 0 no-repeat;
+  background: url("../../assets/images/question/kakao-icon.png") 0 0 no-repeat;
   background-position-y: bottom;
 }
 
@@ -59,22 +59,25 @@ p.con__text {
     padding-bottom: 146px;
   }
 
-  .qna__title, .contact__title {
-  text-align: center;
-  display: flex;
-  padding-left: 16.61%;
-  padding-right: 16.61%;
+  .qna__title,
+  .contact__title {
+    text-align: center;
+    display: flex;
+    padding-left: 16.61%;
+    padding-right: 16.61%;
   }
 
-  .qna__title h1, .contact__title h1 {
-  font-size: 50px;
+  .qna__title h1,
+  .contact__title h1 {
+    font-size: 50px;
   }
 
-  .qna__subTitle, .contact__subTitle {
-  font-size: 19px;
-  padding-top: 15px;
-  padding-left: 16.61%;
-  padding-right: 16.61%;
+  .qna__subTitle,
+  .contact__subTitle {
+    font-size: 19px;
+    padding-top: 15px;
+    padding-left: 16.61%;
+    padding-right: 16.61%;
   }
 
   .accordion-box {
@@ -86,27 +89,30 @@ p.con__text {
     cursor: pointer;
   }
 
-  .question, .kakao {
-  line-height: 60px;
-  font-size: 20px;
-  margin-top: 33px;
-  padding: 0 10px;
-  padding: 23px;
-  border-radius: 20px;
+  .question,
+  .kakao {
+    line-height: 60px;
+    font-size: 20px;
+    margin-top: 33px;
+    padding: 0 10px;
+    padding: 23px;
+    border-radius: 20px;
   }
 
-  span.question__qna-icon, span.kakao__icon {
-  margin-left: 49px;
-  font-size: 30px;
+  span.question__qna-icon,
+  span.kakao__icon {
+    margin-left: 49px;
+    font-size: 30px;
   }
 
   span.kakao__icon {
     background-size: 30px;
   }
 
-  span.question__text, span.kakao__text {
-  font-size: 20px;
-  padding: 23px;
+  span.question__text,
+  span.kakao__text {
+    font-size: 20px;
+    padding: 23px;
   }
 
   .con {
@@ -133,21 +139,24 @@ p.con__text {
 /* 테블릿 세로, 테블릿 가로 (해상도 768px ~ 1023px)*/
 @media all and (min-width: 768px) and (max-width: 1023px) {
   section.QnA {
-    padding-bottom: 8.20%;
+    padding-bottom: 8.2%;
   }
 
-  .qna__title, .contact__title {
+  .qna__title,
+  .contact__title {
     text-align: center;
     display: flex;
     padding-left: 16.61%;
     padding-right: 16.61%;
   }
-  
-  .qna__title h1, .contact__title h1 {
+
+  .qna__title h1,
+  .contact__title h1 {
     font-size: 30px;
   }
 
-  .qna__subTitle, .contact__subTitle {
+  .qna__subTitle,
+  .contact__subTitle {
     font-size: 19px;
     padding-top: 15px;
     padding-left: 16.61%;
@@ -163,64 +172,70 @@ p.con__text {
     cursor: pointer;
   }
 
-  .question, .kakao {
+  .question,
+  .kakao {
     line-height: 60px;
     font-size: 15px;
     margin-top: 33px;
     padding: 0 10px;
     padding: 5px;
     border-radius: 10px;
-    }
+  }
 
-    span.question__qna-icon, span.kakao__icon {
-      margin-left: 49px;
-      font-size: 30px;
-      margin-right: 20px;
-    }
+  span.question__qna-icon,
+  span.kakao__icon {
+    margin-left: 49px;
+    font-size: 30px;
+    margin-right: 20px;
+  }
 
-    span.kakao__icon {
-      background-size: contain;
-    }
+  span.kakao__icon {
+    background-size: contain;
+  }
 
-    span.question__text, span.kakao__text {
-      font-size: 15px;
-    }
+  span.question__text,
+  span.kakao__text {
+    font-size: 15px;
+  }
 
-    .con {
-      width: 100%;
-      padding: 25px 50px;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
-      margin-top: -10px;
-    }
-    
-    p.con__text {
-      padding-left: 65px;
-      padding-right: 65px;
-      padding-top: 25px;
-      padding-bottom: 25px;
-      font-size: 15px;
-    }
+  .con {
+    width: 100%;
+    padding: 25px 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: -10px;
+  }
+
+  p.con__text {
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 15px;
+  }
 }
 
 /* 모바일 가로 (해상도 480px ~ 767px)*/
 @media all and (min-width: 480px) and (max-width: 767px) {
   section.QnA {
-    padding-bottom: 8.20%;
+    padding-bottom: 8.2%;
   }
 
-  .qna__title, .contact__title {
+  .qna__title,
+  .contact__title {
     text-align: center;
     display: flex;
     padding-left: 16.61%;
     padding-right: 16.61%;
   }
 
-  .qna__title h1, .contact__title h1 {
+  .qna__title h1,
+  .contact__title h1 {
     font-size: 20px;
   }
 
-  .qna__subTitle, .contact__subTitle {
+  .qna__subTitle,
+  .contact__subTitle {
     font-size: 14px;
     padding-top: 15px;
     padding-left: 16.61%;
@@ -236,82 +251,87 @@ p.con__text {
     cursor: pointer;
   }
 
-  .question, .kakao {
+  .question,
+  .kakao {
     line-height: 60px;
     font-size: 12px;
     margin-top: 33px;
     padding: 0 10px;
     padding: 5px;
     border-radius: 10px;
-    }
+  }
 
-    span.question__qna-icon, span.kakao__icon {
-      margin-left: 25px;
-      font-size: 21px;
-      margin-right: 16px;
-    }
+  span.question__qna-icon,
+  span.kakao__icon {
+    margin-left: 25px;
+    font-size: 21px;
+    margin-right: 16px;
+  }
 
-    span.kakao__icon {
-      background-size: contain;
-    }
+  span.kakao__icon {
+    background-size: contain;
+  }
 
-    span.question__text, span.kakao__text {
-      font-size: 12px;
-    }
+  span.question__text,
+  span.kakao__text {
+    font-size: 12px;
+  }
 
-    .con {
-      width: 100%;
-      padding: 25px 50px;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
-      margin-top: -10px;
-    }
+  .con {
+    width: 100%;
+    padding: 25px 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: -10px;
+  }
 
-    p.con__text {
-      padding-left: 65px;
-      padding-right: 65px;
-      padding-top: 25px;
-      padding-bottom: 25px;
-      font-size: 12px;
-    }
-
+  p.con__text {
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 12px;
+  }
 }
 
 /* 모바일 세로 (해상도 ~ 479px)*/
 @media all and (max-width: 479px) {
-
   section.QnA {
-    padding-bottom: 8.20%;
+    padding-bottom: 8.2%;
   }
 
-  .qna__title, .contact__title {
+  .qna__title,
+  .contact__title {
     text-align: center;
     display: flex;
-    padding-left: calc(24/375*100%);
-    padding-right: calc(24/375*100%);
+    padding-left: calc(24 / 375 * 100%);
+    padding-right: calc(24 / 375 * 100%);
   }
 
-  .qna__title h1, .contact__title h1 {
+  .qna__title h1,
+  .contact__title h1 {
     font-size: 24px;
   }
 
-  .qna__subTitle, .contact__subTitle {
+  .qna__subTitle,
+  .contact__subTitle {
     font-size: 12px;
     padding-top: 15px;
-    padding-left: calc(24/375*100%);
-    padding-right: calc(24/375*100%);
+    padding-left: calc(24 / 375 * 100%);
+    padding-right: calc(24 / 375 * 100%);
   }
 
   .accordion-box {
     width: 100%;
     max-width: 87%;
-    margin-left: calc(24/375*100%);
-    margin-right: calc(24/375*100%);
+    margin-left: calc(24 / 375 * 100%);
+    margin-right: calc(24 / 375 * 100%);
     padding-top: 12px;
     cursor: pointer;
   }
 
-  .question, .kakao {
+  .question,
+  .kakao {
     line-height: 40px;
     font-size: 10px;
     margin-top: 20px;
@@ -320,17 +340,19 @@ p.con__text {
     border-radius: 10px;
   }
 
-  span.question__qna-icon, span.kakao__icon {
+  span.question__qna-icon,
+  span.kakao__icon {
     margin-left: 10px;
     font-size: 18px;
     margin-right: 5px;
-  }    
+  }
 
   span.kakao__icon {
     background-size: contain;
   }
 
-  span.question__text, span.kakao__text {
+  span.question__text,
+  span.kakao__text {
     font-size: 11px;
   }
 
@@ -350,5 +372,4 @@ p.con__text {
     font-size: 12px;
     line-height: 18px;
   }
-
 }

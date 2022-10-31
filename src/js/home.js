@@ -87,8 +87,8 @@ function countDown(month, day, hour, minute, second) {
 
 // 1초마다 함수를 실행하는데 만약 마감시간이 돼서 true 값이 나온다면 멈춘다.
 let interval = setInterval(() => {
-  countDown(11, 2, 0, 0, 0);
-  if (countDown(11, 2, 0, 0, 0)) {
+  countDown(11, 9, 0, 0, 0);
+  if (countDown(11, 9, 0, 0, 0)) {
     clearInterval(interval);
   }
 }, 1000);

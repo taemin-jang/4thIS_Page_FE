@@ -41,6 +41,18 @@
   padding-bottom: 80px;
 }
 
+.modal__notice-box--div {
+  margin: auto;
+}
+
+.modal__notice--p {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 40px;
+  line-height: 30px;
+}
+
 .modal__date-box--div {
   width: 322px;
   height: 101px;
@@ -81,15 +93,13 @@
   border: none;
   font-size: 20px;
   cursor: pointer;
+  margin: 0 auto;
 }
 
-.closeBtn-2 {
-  width: 251px;
+.modal__notice--button {
+  width: 100%;
   height: 71px;
-  background-color: #e6e6e6;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
+  display: flex;
 }
 
 .button__apply--button {
@@ -175,7 +185,8 @@
 .schedule__img {
   width: 1006.5px;
   height: 48px;
-  background-image: url("../../assets/images/joinUs/calender\ image.png");
+  /* background-image: url("../../assets/images/joinUs/calender\ image.png"); */
+  background-image: url("../../assets/images/joinUs/mobile-schedule.png");
   margin: 101px 0px 0px 151.5px;
 }
 
@@ -560,7 +571,8 @@ img.apply-circle {
     width: 304px;
     height: 15px;
     margin: auto;
-    background-image: url("../../assets/images/joinUs/calender\ image.png");
+    /* background-image: url("../../assets/images/joinUs/calender\ image.png"); */
+    background-image: url("../../assets/images/joinUs/mobile-schedule.png");
     background-size: contain;
   }
 
@@ -877,9 +889,19 @@ img.apply-circle {
     width: 100vw;
   }
 
+  .modal__notice--p {
+    font-size: 15px;
+  }
+
   .modal__button-box--div {
     width: 92vw;
     margin: 0 auto;
+  }
+
+  .modal__title--h1 {
+    font-size: 22px;
+    padding-bottom: 40px;
+    padding-top: 40px;
   }
 
   .closeBtn {

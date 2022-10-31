@@ -225,7 +225,12 @@
                 4차산업연구회에서 함께 활동할 7기 신입 멤버를 모집중입니다!<br />
                 모집에 관한 자세한 사항을 스크롤해서 확인해보세요.
               </p>
-              <button class="banner__button--button openBtn">지원하기></button>
+              <button
+                class="banner__button--button openBtn"
+                onclick="openModal('0')"
+              >
+                지원하기>
+              </button>
               <div class="modal hidden">
                 <div class="bg"></div>
                 <div class="modalBox">
@@ -234,11 +239,11 @@
                     <div class="modal__date-box--div">
                       <p class="modal__date--p">
                         <strong>모집기간</strong
-                        >&nbsp;&nbsp;&nbsp;2022.10.28~2022.11.02
+                        >&nbsp;&nbsp;&nbsp;2022.10.27~2022.11.09
                       </p>
                       <p class="modal__date--p">
                         <strong>면접일</strong
-                        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2022.11.04
+                        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2022.11.11
                       </p>
                     </div>
                     <div class="modal__warning-box--div">
@@ -249,9 +254,41 @@
                       </p>
                     </div>
                     <div class="modal__button-box--div">
-                      <button class="closeBtn">다시 보기 ></button>
+                      <button class="closeBtn" onclick="closeModal('0')">
+                        다시 보기 >
+                      </button>
                       <button class="button__apply--button">
                         <a href="https://naver.me/G0JRGftV">지원하기 ></a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal">
+                <div class="bg"></div>
+                <div class="modalBox">
+                  <div class="modal__content--div">
+                    <h1 class="modal__title--h1">
+                      이태원 사고 사망자를 추모합니다.
+                    </h1>
+                    <div class="modal__notice-box--div">
+                      <p class="modal__notice--p">4차산업연구회입니다.</p>
+                      <p class="modal__notice--p">
+                        지난 29일 발생한 참사에 애도의 뜻을 전합니다.
+                      </p>
+                      <p class="modal__notice--p">
+                        금주 예정되었던 면접은 11월 11일 금요일로 <br />일주일
+                        연기하여 진행될 예정이오니 <br />지원자 분들의 양해
+                        부탁드립니다.
+                      </p>
+                      <p class="modal__notice--p">
+                        희생자와 유족 분들께 다시 한번 깊은 애도를 표하며
+                        <br />부상자분들의 빠른 회복을 진심으로 기원합니다.
+                      </p>
+                    </div>
+                    <div class="modal__notice--button">
+                      <button class="closeBtn" onclick="closeModal('1')">
+                        닫기
                       </button>
                     </div>
                   </div>
@@ -268,11 +305,11 @@
           <p class="schedule__title--p">모집 일정</p>
           <div class="schedule__img"></div>
           <div class="schedule__text-box">
-            <p class="schedule__text_1--p">홍보<br />10/27~11/02</p>
-            <p class="schedule__text_2--p">서류 지원<br />10/27~11/02</p>
-            <p class="schedule__text_3--p">1차 면접<br />11/04</p>
-            <p class="schedule__text_4--p">1차 합격 발표<br />11/08</p>
-            <p class="schedule__text_5--p">지도교수 면담<br />11/09~11/11</p>
+            <p class="schedule__text_1--p">홍보<br />10/27~11/09</p>
+            <p class="schedule__text_2--p">서류 지원<br />10/27~11/09</p>
+            <p class="schedule__text_3--p">1차 면접<br />11/11</p>
+            <p class="schedule__text_4--p">1차 합격 발표<br />11/14</p>
+            <p class="schedule__text_5--p">지도교수 면담<br />11/15~11/17</p>
           </div>
         </div>
       </section>
@@ -491,41 +528,13 @@
           <div class="banner-bottom-content">
             <p class="banner-bottom-text-1">4thIS 7기 지원하러 가기</p>
             <p class="banner-bottom-text-2">4htIS 7기 지원해보세요!</p>
-            <p class="banner-bottom-text-3">2022.10.28 ~ 2022.11.02</p>
-            <button class="openBtn banner__support--button openBtn-2">
+            <p class="banner-bottom-text-3">2022.10.27 ~ 2022.11.09</p>
+            <button
+              class="openBtn banner__support--button openBtn"
+              onclick="openModal('0')"
+            >
               지원하기>
             </button>
-            <div class="modal hidden">
-              <div class="bg"></div>
-              <div class="modalBox">
-                <div class="modal__content--div">
-                  <h1 class="modal__title--h1">4thIS 7기 지원하기</h1>
-                  <div class="modal__date-box--div">
-                    <p class="modal__date--p">
-                      <strong>모집기간</strong
-                      >&nbsp;&nbsp;&nbsp;2022.10.28~2022.11.02
-                    </p>
-                    <p class="modal__date--p">
-                      <strong>면접일</strong
-                      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2022.11.04
-                    </p>
-                  </div>
-                  <div class="modal__warning-box--div">
-                    <p class="modal__warning--p">
-                      모집 설명 페이지에 기재된 내용을 꼼꼼히 읽어본 후<br />
-                      지원해 주시기 바랍니다.<br />
-                      정말로 4thIS 7기에 지원하시겠습니까?
-                    </p>
-                  </div>
-                  <div class="modal__button-box--div">
-                    <button class="closeBtn-2">다시 보기 ></button>
-                    <button class="button__apply--button">
-                      <a href="https://naver.me/G0JRGftV">지원하기 ></a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -553,7 +562,7 @@
     </footer>
 
     <script src="./js/join-us.js"></script>
-    <script src="./js/mousemove.js"></script>
+    <!-- <script src="./js/mousemove.js"></script> -->
     <script src="./js/chatbot.js"></script>
   </body>
 </html>
