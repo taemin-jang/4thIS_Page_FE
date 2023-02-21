@@ -19,9 +19,11 @@ function countDown(month, day, hour, minute, second) {
     hour12: false,
   }).format(date);
 
-  // 현재시간 정규식으로 숫자만 추출 num 배열 [일, 시간, 분]
+  // 현재시간 정규식으로 숫자만 추출 num 배열 [월, 일, 시간, 분, 초]
   let num = formatDate.match(/\d+/g).map((el) => +el);
-
+  console.log(num);
+  if (month <= num[0] && day <= num[1] && hour <= num[2] && minute <= num[3])
+    return true;
   // 세팅한 시간의 총 합
   let total = day * 86400 + hour * 3600 + minute * 60 + second;
 
@@ -82,13 +84,12 @@ function countDown(month, day, hour, minute, second) {
   ).innerHTML = second % 10);
 
   // 마감 시간이 도달하면 true 아니면 false를 반환
-  return day <= 0 && hour <= 0 && minute <= 0 && second <= 0 ? true : false;
+  if (day <= 0 && hour <= 0 && minute <= 0 && second <= 0) return true;
 }
 
 // 1초마다 함수를 실행하는데 만약 마감시간이 돼서 true 값이 나온다면 멈춘다.
 let interval = setInterval(() => {
-  countDown(11, 9, 0, 0, 0);
-  if (countDown(11, 9, 0, 0, 0)) {
+  if (countDown(2, 22, 1, 12, 0)) {
     clearInterval(interval);
   }
 }, 1000);
@@ -133,53 +134,36 @@ function slide(cnt) {
     bulletEl[2].classList.remove("active");
 
     // 조건에 맞는 각 요소에 active 클래스 추가
-    if (cnt < 3) {
+    if (cnt === 0) {
       // 1 ~ 3
       bulletEl[0].classList.add("active");
-    } else if (cnt < 6) {
+    } else if (cnt === 1) {
       // 4 ~ 6
       bulletEl[1].classList.add("active");
     } else {
       // 7 ~ 9
       bulletEl[2].classList.add("active");
     }
-
-    // if (cnt < 1) {
-    //   galleryEl[6].classList.remove("active");
-    //   galleryEl[7].classList.remove("active");
-    //   galleryEl[8].classList.remove("active");
-    //   galleryEl[0].classList.add("active");
-    //   galleryEl[1].classList.add("active");
-    //   galleryEl[2].classList.add("active");
-    // } else if (cnt >= 1) {
-    //   galleryEl[cnt - 1].classList.remove("active");
-    //   galleryEl[cnt + 2].classList.add("active");
-    // }
   }
   pagination(cnt);
 
   // pagination 클릭 시 해당 위치로 이동
   bulletEl[0].addEventListener("click", () => {
     // slideEl.style.transform = "translate(0px)";
-    cnt = 1;
-    pagination(cnt);
+    cnt = 0;
+    slide(cnt);
   });
   bulletEl[1].addEventListener("click", () => {
     // slideEl.style.transform = "translate(-1899px)";
-    cnt = 4;
-    pagination(cnt);
+    cnt = 1;
+    slide(cnt);
   });
   bulletEl[2].addEventListener("click", () => {
     // slideEl.style.transform = "translate(-3798px)";
-    cnt = 6;
-    pagination(cnt);
+    cnt = 2;
+    slide(cnt);
   });
   cnt++;
-
-  // 이미지가 마지막 3장 보이면 다시 처음으로 돌아가기
-  // if (cnt > galleryEl.length - 3) {
-  //   cnt = 0;
-  // }
 
   if (bodyEl >= 1024) {
     if (cnt > galleryEl.length - 3) {
@@ -256,19 +240,4 @@ function changefront(i) {
   }
 
   j = i;
-
-  // console.log(memberEl, memberElCol);
 }
-// memberEl.addEventListener("click", changefront);
-
-/* 
-document.querySelector(".클래스 #아이디 div")
-let changeEl = document.querySelectorAll()
-changeEl[2]
-
-console.log(changeEl);
-
-active 클래스를 주자
-기본으로 기획 / 디자인을 보여주자
-
-*/
