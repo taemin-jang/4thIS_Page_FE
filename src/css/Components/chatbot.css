@@ -27,10 +27,16 @@
   display: block;
 }
 
+.chatbot__click.active button {
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.4);
+}
+
 .chatbot__click-list {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 50px;
+  margin-bottom: 26px;
+  height: 56px;
 }
 
 .chatbot__click-list--div {
@@ -47,6 +53,7 @@
   font-size: 20px;
   font-weight: 700;
   border-radius: 86px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.4);
 }
 
 .chatbot--image {
